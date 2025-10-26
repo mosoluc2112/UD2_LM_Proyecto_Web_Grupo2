@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Hay que elegir el nombre de la página web-->
     <title>Proyecto</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <!--Dentro del header tenemos que poner el nombre de la página, un subtítulo o eslogan/lema y su logo-->
@@ -16,7 +24,7 @@
     <nav>
         <!--Para acceder a la página index lo podríamos hacer a través del logo con un enlace pero el logo tiene
         que estar en el header :( -->
-        <a href="index.html" target="_blank">
+        <a href="index.html" target="_blank">Home
             <!-- <img src=""> -->
         </a>
         <a href="perfil.html" target="_blank">Perfil</a>
@@ -28,7 +36,84 @@
         <!--Realmente creo que esta página no se puede hacer porque tiene que haber una para iniciar
         sesión, aparte de incluir información de base de datos para que aparezca el nombre del usuario
         al entrar en su perfil-->
-        <h1>Mi perfil</h1>
+        <img src=""> <!--Aquí va la foto de perfil del usuario-->
+        <h2 id="#perfil">Mi perfil</h2>
+        <h3><strong>Nombre de usuario</strong></h3>
+        <p>Elige tu nombre de usuario</p>
+        <h3><strong>Biografía</strong></h3>
+        <p>Añade tu breve <i><b>biografía</b></i> como programador/a</p>
+        <section>
+            <article>
+                <h4>Racha Actual</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="7">0 días</th> <!--Incluir aquí un icono para asociarlo al concepto racha-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>L</td>
+                            <td>M</td>
+                            <td>M</td>
+                            <td>J</td>
+                            <td>V</td>
+                            <td>S</td>
+                            <td>D</td>
+                        </tr>
+                    </tbody>
+                    <footer>
+                        <tr>
+                            <td colspan="7">¡Completa una lección y comienza ahora tu racha!</td>
+                        </tr>
+                    </footer>
+                </table>
+                <h4>Racha más larga</h4>
+                <p>0 días</p> <!--Incluir aquí otro icono-->
+            </article>
+            <article>
+                <h4>Progreso de mis cursos</h4>
+                <ul>
+                    <li>Curso 1: %</li>
+                    <li>Curso 2: %</li>
+                    <li>Curso 3: %</li>
+                </ul>
+            </article>
+            <article>
+                <h4>Mis certificados</h4>
+                <ol>
+                    <li>Certificado 1 completado</li>
+                    <li>Certificado 2 completado</li>
+                    <li>Certificado 3 completado</li>
+                </ol>
+            </article>
+        </section>
+        <!--En el aside van los enlaces de interés o información
+        complementaria que se verán en una barra lateral-->
+        <aside>
+            <h4></h4>
+        </aside>
+        <!--Pie de página con enlaces a 3 redes sociales, apartado de datos
+        de contacto (email & teléfono), y copyright-->
+        <footer>
+            <a href="#perfil">Haz clic aquí para volver al principio de la página</a>
+            <br>
+            <br>
+            <!--Los enlaces a RRSS deberían ir dentro de un nav???-->
+            <a href="">Instagram
+                <img src="">
+            </a>
+            <a href="">Tiktok
+                <img src="">
+            </a>
+            <a href="">Youtube
+                <img src="">
+            </a>
+            <h5>Contáctanos</h5>
+            <a href="mailto:blablabla@gmail.com">Email</a>
+            <p>Llámanos al <strong>123456789</strong></p>
+            <p>Copyright © 2025 | Página diseñada por Leticia Montilla</p>
+        </footer>
     </main>
 </body>
 </html>
