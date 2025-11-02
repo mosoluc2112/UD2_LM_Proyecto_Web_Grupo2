@@ -34,12 +34,20 @@
         <!--Realmente creo que esta página no se puede hacer porque tiene que haber una para iniciar
         sesión, aparte de incluir información de base de datos para que aparezca el nombre del usuario
         al entrar en su perfil-->
-        <img src="/images/foto_perfil_usuario.png" width="50px"> <!--Aquí va la foto de perfil del usuario-->
-        <h2 id="#perfil">Mi perfil</h2>
-        <h3><strong>Nombre de usuario</strong></h3>
-        <p>Elige tu nombre de usuario</p>
-        <h3><strong>Biografía</strong></h3>
-        <p>Añade tu breve <i><b>biografía</b></i> como programador/a</p>
+        <section>
+            <img src="/images/foto_perfil_usuario.png" width="50px"> <!--Aquí va la foto de perfil del usuario-->
+            <h2 id="#perfil">Mi perfil</h2>
+            <form>
+                <label><strong>Nombre de usuario:</strong></label>
+                <input type="text" placeholder="Elige tu nombre de usuario">
+                <button type="submit">Guardar cambios</button>
+                <br>
+                <br>
+                <label><strong>Biografía:</strong></label>
+                <input type="text" placeholder="Añade tu breve biografía como programador">
+                <button type="submit">Guardar cambios</button>
+            </form>
+        </section>
         <section>
             <article>
                 <h4>Racha Actual</h4>
@@ -90,27 +98,27 @@
         complementaria que se verán en una barra lateral: Pondremos el enlace
         a la página para hacerte un perfil premium-->
         <aside>
-            <h4></h4>
+            <h4>Hazte premium</h4>
+            <p>Disfruta de la experiencia completa y aprovéchate de las ventajas que ofrecemos.</p>
+            <a href="premium.html">Los 30 primeros días son <strong><em>GRATIS!</em></strong></a>
         </aside>
-        <!--Pie de página con enlaces a 3 redes sociales, apartado de datos
-        de contacto (email & teléfono), y copyright-->
-        
     </main>
-    
+    <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
+    (email & teléfono), y copyright-->
     <footer>
         <a href="#perfil">Haz clic aquí para volver al principio de la página</a>
         <br>
         <br>
         <!--Los enlaces a RRSS deberían ir dentro de un nav???-->
         <nav>
-            <a href="">Instagram
-                <img src="">
+            <a href="https://www.instagram.com/" target="_blank">Instagram
+                <img src="/images/logo_instagram.png" width="23px">
             </a>
-            <a href="">Tiktok
-                <img src="">
+            <a href="https://www.tiktok.com/" target="_blank">Tiktok
+                <img src="/images/logo_tiktok.png" width="23px">
             </a>
-            <a href="">Youtube
-                <img src="">
+            <a href="https://www.youtube.com/" target="_blank">Youtube
+                <img src="/images/logo_youtube.png" width="100px">
             </a>
         </nav>
         <h5>Contáctanos</h5>
