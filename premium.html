@@ -24,7 +24,56 @@
         </nav>
     </header>
     <main>
+        <!--Deberíamos poner una breve introducción explicando las ventajas de la versión premium-->
         <!-- redirigir aquí a una página de pago que habrá que crear con formulario para poner los datos-->
+        <section>
+            <h1>BIENVENIDO! ME ALEGRO DE QUE QUIERAS DAR EL PASO A LA VERSIÓN PREMIUM!</h1>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <legend><b>Datos de contacto y personales</b></legend>
+                    <label for="nombre">Nombre y apellidos:</label>
+                    <input type="text" name="nombre" placeholder="Paula Morales" disabled>
+                    <br>
+                    <br>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" name="correo" placeholder="paulamorales@gmail.com" disabled>
+                    <br>
+                    <br>
+                    <label for="tlf">Teléfono:</label>
+                    <input type="text" name="tlf" placeholder="+34 123 456 789">
+                    <br>
+                    <br>
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" name="fecha">
+                </fieldset>
+                <fieldset>
+                    <legend><b>Datos de pago</b></legend>
+                    <label for="pago">Método de pago:</label>
+                    <select name="pago" required>
+                        <option>Tarjeta de crédito</option>
+                        <option>PayPal</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="n_tarjeta">Número de tarjeta:</label>
+                    <input type="text" name="n_tarjeta" required>
+                    <br>
+                    <br>
+                    <label for="fecha_cad">Fecha de caducidad:</label>
+                    <input type="date" name="fecha_cad">
+                    <br>
+                    <br>
+                    <label for="cvv">CVV:</label>
+                    <input type="text" name="cvv" placeholder="000">
+                    <br>
+                    <br>
+                    <label for="titular">Titular de la tarjeta:</label>
+                    <input type="text" name="titular" placeholder="Claudia Pérez">
+                </fieldset>
+            </form>
+        </section>
     </main>
 
     <footer>
