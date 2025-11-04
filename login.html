@@ -29,17 +29,18 @@
  más bien cosa de javasript porque deberíamos poner al mismo tiempo que si pulsas mis cursos o mi perfil desde la barra de navegación
  q te lleve a loggearte si no lo has hecho)-->
             <h2 id="#login">Inicio de Sesión</h2>
-        <form>
+        <form action="perfil.html" method="post">
             <label>Nombre de Usuario</label><br>
-                <input type="text" required="true"> <br> <br>
+                <input type="text"  placeholder="Ej: usuario22"> <br> <br>
 
             <label>Correo electrónico</label><br>
-                <input type="email" required="true"> <br><br>
+                <input type="email"  placeholder="usuario@correo.es"> <br><br>
                 
             <label>Contraseña</label> <br>   
-                <input type="password" required="true" min="8"> <br><br>
+                <input type="password"  min="8" max="64"> <br><br>
             
             <input type="submit"> <br><br>
+
         </form>
     </main>
 
