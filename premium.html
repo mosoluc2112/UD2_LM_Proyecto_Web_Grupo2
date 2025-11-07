@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Hay que elegir el nombre de la página web-->
     <title>Hazte Premium</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <!--Dentro del header tenemos que poner el nombre de la página, un subtítulo o eslogan/lema y su logo-->
     <header>
         <h1>CodiGo</h1>
+        <h2>Del "Hola Mundo" al mundo real, porque el conocimiento también se compila</h2>
         <!--Dentro de nav tenemos que poner un menú de navegación-->
+        <!--Hay que ponerlo en una lista???????-->
         <nav>
             <!--Para acceder a la página index lo haremos a través del logo mediante un enlace -->
             <a href="index.html" target="_blank">
@@ -25,12 +35,77 @@
     </header>
     <main>
         <!--Deberíamos poner una breve introducción explicando las ventajas de la versión premium-->
-        <!-- redirigir aquí a una página de pago que habrá que crear con formulario para poner los datos-->
         <section>
-            <h1>BIENVENIDO! ME ALEGRO DE QUE QUIERAS DAR EL PASO A LA VERSIÓN PREMIUM!</h1>
+            <h3>CodiGo Premium: el siguiente nivel está en tu aprendizaje digital</h3>
+            <p>En <b>CodiGo</b>, creemos que aprender a programar no debería ser aburrido
+                ni complicado. Por eso hemos creado <strong><em>CodiGo Premium</em></strong>,
+                una versión diseñada para quienes desean ir más allá. Con esta modalidad,
+                podrás acceder a todo el contenido sin límites, disfrutar de clases <b>exclusivas</b>,
+                retos interactivos y seguimiento personalizado.</p>
+            <p>Además, ofrecemos herramientas avanzadas para practicar sin conexión y un espacio
+                de comunidad donde podrás compartir tus logros, aprender con otros y mantener tu
+                motivación al máximo. <i>¡Porque en el mundo del código, la práctica lo es todo!</i></p>
+            <p>Por cierto, si te preguntas qué significa “CodiGo”, es una fusión entre
+                “<b>Código</b>” y “<b>Go</b>” (ir, avanzar). Porque aquí no solo aprendes a
+                programar, sino que también: <strong><em>avanzas, mejoras y creces</em></strong>.</p>
         </section>
         <section>
-            <form>
+            <table>
+                <thead>
+                    <th colspan="2">Ventajas de CodiGo Premium:</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="4">Plan gratuito</td>
+                        <td>Acceso a cursos básicos de HTML, CSS y Python.</td>
+                    </tr>
+                    <tr>
+                        <td>Progreso guardado en tu perfil.</td>
+                    </tr>
+                    <tr>
+                        <td>Participación en foros y comentarios del blog.</td>
+                    </tr>
+                    <tr>
+                        <td>Publicidad ocasional dentro de la plataforma.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">Plan premium</td>
+                        <td>Acceso ilimitado a todos los cursos, proyectos y retos interactivos.</td>
+                    </tr>
+                    <tr>
+                        <td>Cursos exclusivos con contenido avanzado y certificaciones oficiales.</td>
+                    </tr>
+                    <tr>
+                        <td>Modo sin conexión para seguir aprendiendo donde quieras.</td>
+                    </tr>
+                    <tr>
+                        <td>Experiencia <b>sin anuncios</b> para concentrarte en lo importante: aprender.</td>
+                    </tr>
+                    <tr>
+                        <td>Comunidad premium para colaborar con otros aprendices y mentores.</td>
+                    </tr>
+                    <tr>
+                        <td>Tutorías online con nuestros mejores expertos.</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><a href="#premium">Hazte premium ahora!</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <dd>“Aprender a programar es enseñarle al mundo cómo piensas.”</dd>
+            <br>
+            <dd>“La educación no es solo adquirir conocimiento, sino aprender a transformar
+                ese conocimiento en acción. En CodiGo creemos que cada línea de código escrita
+                es un paso hacia un futuro más libre, creativo y conectado.”
+                — Equipo de Desarrollo de CodiGo</dd>
+        </section>
+        <br>
+        <section>
+            <h3>Rellena el siguiente formulario para hacerte premium</h3>
+            <form id="premium">
                 <fieldset>
                     <legend><b>Datos de contacto y personales</b></legend>
                     <label for="nombre">Nombre y apellidos:</label>
@@ -42,40 +117,68 @@
                     <br>
                     <br>
                     <label for="tlf">Teléfono:</label>
-                    <input type="text" name="tlf" placeholder="+34 123 456 789">
+                    <input type="tel" name="tlf" placeholder="+34 123 456 789">
                     <br>
                     <br>
                     <label for="fecha">Fecha de nacimiento:</label>
                     <input type="date" name="fecha">
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" min="18" max="100">
                 </fieldset>
                 <fieldset>
                     <legend><b>Datos de pago</b></legend>
-                    <label for="pago">Método de pago:</label>
+                    <label for="pago">Método de pago:*</label>
                     <select name="pago" required>
                         <option>Tarjeta de crédito</option>
                         <option>PayPal</option>
                     </select>
                     <br>
                     <br>
-                    <label for="n_tarjeta">Número de tarjeta:</label>
-                    <input type="text" name="n_tarjeta" required>
+                    <label for="n_tarjeta">Número de tarjeta:*</label>
+                    <input type="text" name="n_tarjeta" placeholder="0000 0000 0000 0000" required>
                     <br>
                     <br>
-                    <label for="fecha_cad">Fecha de caducidad:</label>
-                    <input type="date" name="fecha_cad">
+                    <label for="fecha_cad">Fecha de caducidad:*</label>
+                    <input type="date" name="fecha_cad" required>
                     <br>
                     <br>
-                    <label for="cvv">CVV:</label>
-                    <input type="text" name="cvv" placeholder="000">
+                    <!--Aquí no he puesto 000 como mínimo porque al meterme en la página después
+                    te deja meter una unidad de número, como el 1, y como tiene que ser una cifra
+                    de 3 números, he puesto 100 como mínimo-->
+                    <label for="cvv">CVV:*</label>
+                    <input type="number" name="cvv" placeholder="000" min="100" max="999" required>
                     <br>
                     <br>
-                    <label for="titular">Titular de la tarjeta:</label>
-                    <input type="text" name="titular" placeholder="Claudia Pérez">
+                    <label for="titular">Titular de la tarjeta:*</label>
+                    <input type="text" name="titular" placeholder="Claudia Pérez" required>
                 </fieldset>
+                <fieldset>
+                    <legend><b>Detalles académicos para personalizar tu experiencia</b></legend>
+                    <label for="aprendizaje">Elige tu objetivo principal:</label>
+                    <br>
+                    <input type="radio" name="aprendizaje">Aprender desde creo
+                    <br>
+                    <input type="radio" name="aprendizaje">Mejorarar mis habilidades
+                    <br>
+                    <input type="radio" name="aprendizaje">Preparar entrevistas técnicas
+                </fieldset>
+                <fieldset>
+                    <legend><b>Confirmaciones y consentimiento</b></legend>
+                    <input type="checkbox" name="acepto" required>
+                    <label for="acepto">He leído y acepto los términos del servicio
+                        y la política de privacidad.</label>
+                    <br>
+                    <input type="checkbox" name="publi">
+                    <label for="publi">Acepto suscribirme al newsletter de CodiGo para
+                        recibir todas las novedades y ofertas.</label>
+                </fieldset>
+                <br>
+                <input type="submit">
+                <input type="reset">
             </form>
         </section>
     </main>
-
+    <br>
     <footer>
         <a href="#premium">Haz clic aquí para volver al principio de la página</a>
         <br>
