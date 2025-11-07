@@ -40,18 +40,26 @@
         <section>
             <h2 id="perfil">Mi perfil</h2>
             <form>
-                <label><strong>Foto de perfil:</strong></label>
+                <label for="foto_perfil"><strong>Foto de perfil:</strong></label>
                 <img src="/images/foto_perfil_usuario.png" width="70px" alt="Foto de perfil">
-                <input type="file">
+                <input type="file" name="foto_perfil">
                 <br>
                 <br>
-                <label><strong>Nombre de usuario:</strong></label>
-                <input type="text" placeholder="Elige tu nombre de usuario">
+                <label for="genero"><strong>Género:</strong></label>
+                <input type="radio" name="genero">Masculino
+                <input type="radio" name="genero">Femenino
+                <input type="radio" name="genero">Prefiero no decirlo
+                <br>
+                <br>
+                <label for="usuario"><strong>Nombre de usuario:</strong></label>
+                <input type="text" name="usuario" placeholder="Elige tu nombre de usuario">
                 <button type="submit">Guardar cambios</button>
                 <br>
                 <br>
-                <label><strong>Biografía:</strong></label>
-                <input type="text" placeholder="Añade tu breve biografía como programador">
+                <label for="bio"><strong>Biografía:</strong></label>
+                <input type="text" name="bio" placeholder="Añade tu breve biografía como programador">
+                <!--MIRAR AQUÍ SI DEBERÍA SER UN INPUT O UN BUTTON-->
+                <input type="submit" value="Guardar Cambios">
                 <button type="submit">Guardar cambios</button>
             </form>
         </section>
