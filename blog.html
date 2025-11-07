@@ -48,7 +48,7 @@
         <h3>Discusiones</h3>
             <table>
                 <thead>
-                        <th>¿Por qué mi bucle <i>for</i> no imprime todos los elementos de la lista?</th>
+                        <th>¿Por qué mi bucle <em>for</em> no imprime todos los elementos de la lista?</th>
                         <th>@CodeNovato92</th>
                 </thead>
                 <tr>
@@ -57,9 +57,9 @@
                         Estoy intentando recorrer una lista con un bucle <i>for</i> para imprimir todos sus elementos,<br> 
                         pero por alguna razón, el último elemento nunca se muestra en pantalla. <br> <br>
                         Mi código en Python es este:<br><br>
-                        <i>numeros = [1, 2, 3, 4, 5]<br>
+                        <em>numeros = [1, 2, 3, 4, 5]<br>
                         for i in range(len(numeros) - 1):<br>
-                        print(numeros[i])<br><br></i>
+                        print(numeros[i])<br><br></em>
                         Como resultado solo imprime del 1 al 4, pero yo esperaba que también saliera el 5.<br>
                         Entiendo que <i>range()</i> genera una secuencia de números, pero no tengo claro por qué tengo que restarle <br>
                         uno a <i>len(numeros)</i>. Si no lo hago, me da un error de índice fuera de rango.<br>
@@ -72,7 +72,7 @@
 
             <table>
                 <thead>
-                        <th><b>Respuesta:</b><i>¿Por qué mi bucle for no imprime todos los elementos de la lista?</i></th>
+                        <th><strong>Respuesta:</strong><em>¿Por qué mi bucle for no imprime todos los elementos de la lista?</em></th>
                         <th>@DevJoseProf</th>
                 </thead>
                 <tr>
@@ -81,24 +81,24 @@
                         Buena pregunta, esto es un error muy común cuando uno empieza con Python.<br>
                         Vamos a desglosarlo paso a paso: <br><br>
                         Cuando haces esto:<br> <br>
-                        <i>for i in range(len(numeros) - 1):</i><br><br>
-                        lo que estás diciendo es que el bucle recorra los valores desde 0 hasta len(numeros) - 2.<br>
-                        Por ejemplo, si tu lista tiene 5 elementos, len(numeros) es 5, y range(5 - 1) genera: <br><br>
-                        <i>[0, 1, 2, 3]</i><br><br>
+                        <em>for i in range(len(numeros) - 1):</em><br><br>
+                        lo que estás diciendo es que el bucle recorra los valores desde 0 hasta <i>len(numeros) - 2</i>.<br>
+                        Por ejemplo, si tu lista tiene 5 elementos, <i>len(numeros)</i> es 5, y <i>range(5 - 1</i>) genera: <br><br>
+                        <em>[0, 1, 2, 3]</em><br><br>
                         Por eso el último índice (4, que corresponde al número 5) nunca se usa, y no se imprime<br> 
                         el último elemento. Si escribieras: <br><br>
-                       <i>for i in range(len(numeros)):<br>
-                        print(numeros[i])</i><br><br>
-                        entonces range(5) generaría [0, 1, 2, 3, 4], e imprimiría todos los elementos correctamente.<br>
-                        Pero hay una forma más “pitónica” de hacerlo:<br>
-                        No necesitas usar índices ni range() para recorrer una lista. Puedes hacerlo así:<br><br>
+                       <em>for i in range(len(numeros)):<br>
+                        print(numeros[i])</em><br><br>
+                        Entonces <i>range(5</i>) generaría [0, 1, 2, 3, 4], e imprimiría todos los elementos correctamente.<br>
+                        Pero hay una forma de estilo <em>más Python</em> de hacerlo:<br><br>
+                        No necesitas usar índices ni <i>range()</i> para recorrer una lista. Puedes hacerlo así:<br><br>
                         <i>for numero in numeros:<br>
                         print(numero)</i><br><br>
                         Python recorrerá automáticamente cada elemento de la lista, sin preocuparte por los índices ni<br> los límites.
                         En resumen: El error ocurre porque restas 1 al <i>len()</i>, haciendo que el bucle se quede corto. <br>Usa 
                         <i>range(len(lista))</i> si realmente necesitas los índices. O mejor aún, recorre directamente los elementos <br>de la lista.
                         <br><br>
-                        ¡Sigue practicando! 💪
+                        <strong>¡Sigue practicando! </strong>💪
                     </td>
                 </tr>
             </table><br>
