@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Hay que elegir el nombre de la página web-->
+    <!--Nombre de la página que aparece en la pestaña del navegador-->
     <title>Hazte Premium</title>
+    <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->    
     <style>
         table, th, td {
             border: 1px solid black;
@@ -15,12 +16,11 @@
     </style>
 </head>
 <body>
-    <!--Dentro del header tenemos que poner el nombre de la página, un subtítulo o eslogan/lema y su logo-->
+    <!--Dentro del header tenemos el nombre de la página, un eslogan/lema y su logo-->
     <header>
         <h1>CodiGo</h1>
         <h2>Del "Hola Mundo" al mundo real, porque el conocimiento también se compila</h2>
-        <!--Dentro de nav tenemos que poner un menú de navegación-->
-        <!--Hay que ponerlo en una lista???????-->
+        <!--Dentro de nav tenemos un menú de navegación-->
         <nav>
             <!--Para acceder a la página index lo haremos a través del logo mediante un enlace -->
             <a href="index.html" target="_blank">
@@ -33,8 +33,9 @@
             <a href="login.html" target="_blank">Inicia Sesión</a>
         </nav>
     </header>
+    <!--El main de premium.html se divide en 3 secciones-->
     <main>
-        <!--Deberíamos poner una breve introducción explicando las ventajas de la versión premium-->
+        <!--En la primera sección hacemos una breve introducción sobre la versión premium-->
         <section>
             <h3 id="premium">CodiGo Premium: el siguiente nivel está en tu aprendizaje digital</h3>
             <p>En <b>CodiGo</b>, creemos que aprender a programar no debería ser aburrido
@@ -49,6 +50,8 @@
                 “<b>Código</b>” y “<b>Go</b>” (ir, avanzar). Porque aquí no solo aprendes a
                 programar, sino que también: <strong><em>avanzas, mejoras y creces</em></strong>.</p>
         </section>
+        <!--En la segunda sección, con una tabla, mostramos las ventajas premium y las comparamos con
+        los servicios de los que el usuario se puede aprovechar en la versión gratuita-->
         <section>
             <table>
                 <thead>
@@ -103,6 +106,8 @@
                 — Equipo de Desarrollo de CodiGo</dd>
         </section>
         <br>
+        <!--En la tercera sección tenemos un formulario para que el usuario, si está interesado,
+        pueda cambiar su cuenta a premium-->
         <section>
             <h3>Rellena el siguiente formulario para hacerte premium</h3>
             <form id="premium">
@@ -179,11 +184,12 @@
         </section>
     </main>
     <br>
+    <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
+    (email & teléfono), y copyright-->
     <footer>
         <a href="#premium">Haz clic aquí para volver al principio de la página</a>
         <br>
         <br>
-        <!--Los enlaces a RRSS deberían ir dentro de un nav???-->
         <nav>
             <a href="https://www.instagram.com/" target="_blank">Instagram
                 <img src="/images/logo_instagram.png" width="23px">
@@ -195,6 +201,9 @@
                 <img src="/images/logo_youtube.png" width="100px">
             </a>
         </nav>
+        <!--Usamos h4 y h5 para mejorar el SEO de la página pese a que el tamaño por defecto sea
+        mucho más pequeño comparado con los headings más importantes, ya que luego podemos
+        modificar su tamaño en CSS-->        
         <h5>Contáctanos</h5>
         <a href="mailto:codi_go@gmail.com">Email</a>
         <p>Llámanos al <strong>+34 123456789</strong></p>

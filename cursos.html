@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Hay que elegir el nombre de la página web-->
+    <!--Nombre de la página que aparece en la pestaña del navegador-->
     <title>Cursos</title>
 </head>
 <body>
-    <!--Dentro del header tenemos que poner el nombre de la página, un subtítulo o eslogan/lema y su logo-->
+    <!--Dentro del header tenemos el nombre de la página, un eslogan/lema y su logo-->
     <header>
         <h1>CodiGo</h1>
         <h2>Del "Hola Mundo" al mundo real, porque el conocimiento también se compila</h2>
-        <!--Hay que ponerlo en una lista???????-->        
-        <!--Dentro de nav tenemos que poner un menú de navegación-->
+        <!--Dentro de nav tenemos un menú de navegación-->
         <nav>
-            <!--Para acceder a la página index lo haremos a través del logo mediante un enlace -->
+            <!--Para acceder a la página index.html lo haremos a través del logo mediante un enlace -->
             <a href="index.html" target="_blank">
                 <img src="/images/logo_pagina_codi_go.png" width="100px"> 
             </a>
@@ -25,7 +24,9 @@
             <a href="login.html" target="_blank">Inicia Sesión</a>
         </nav>
     </header>
+    <!--El main de cursos.html se divide en 2 secciones-->
     <main>
+        <!--En el primer bloque de section, presentamos los cursos que se pueden aprender en nuestra web-->
         <section>
             <h2 id="cursos">Cursos</h2>
             <h4 id="html">HTML</h4>
@@ -75,12 +76,38 @@
                 clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+        <br>
+        <!--En el segundo bloque section tenemos un pequeño formulario-->
+        <section>
+            <form>
+                <fieldset>
+                    <legend><b>Empieza tu camino a la programación</b></legend>
+                    <label for="cursos">¿Qué cursos quieres hacer?</label>
+                    <br>
+                    <input type="checkbox" name="cursos">HTML<br>
+                    <input type="checkbox" name="cursos">CSS<br>
+                    <input type="checkbox" name="cursos">Javascript<br>
+                    <input type="checkbox" name="cursos">Java<br>
+                    <input type="checkbox" name="cursos">Python<br>
+                    <br>
+                    <label for="horario">Selecciona qué día empezarás el curso y a qué hora
+                        quieres que te llegue el recordatorio diario para ponerte codificar:</label>
+                    <br>
+                    <input type="datetime-local" name="horario">
+                    <br><br>
+                    <input type="submit" value="Comenzar">
+                    <input type="reset">
+                </fieldset>
+            </form>
+        </section>
     </main>
+    <br>
+    <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
+    (email & teléfono), y copyright-->
     <footer>
         <a href="#cursos">Haz clic aquí para volver al principio de la página</a>
         <br>
         <br>
-        <!--Los enlaces a RRSS deberían ir dentro de un nav???-->
         <nav>
             <a href="https://www.instagram.com/" target="_blank">Instagram
                 <img src="/images/logo_instagram.png" width="23px">
