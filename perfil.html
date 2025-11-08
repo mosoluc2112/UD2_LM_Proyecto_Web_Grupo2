@@ -45,22 +45,22 @@
             <form>
                 <label for="foto_perfil"><strong>Foto de perfil:</strong></label>
                 <img src="/images/foto_perfil_usuario.png" width="70px" alt="Foto de perfil">
-                <input type="file" name="foto_perfil">
+                <input type="file" id="foto_perfil" name="foto_perfil">
                 <br>
                 <br>
-                <label for="genero"><strong>Pronombres:</strong></label>
-                <input type="radio" name="genero">He/him
-                <input type="radio" name="genero">She/her
-                <input type="radio" name="genero">They/them
+                <label for="pronombres"><strong>Pronombres:</strong></label>
+                <input type="radio" id="pronombres" name="pronombres">He/him
+                <input type="radio" id="pronombres" name="pronombres">She/her
+                <input type="radio" id="pronombres" name="pronombres">They/them
                 <br>
                 <br>
                 <label for="usuario"><strong>Nombre de usuario:</strong></label>
-                <input type="text" name="usuario" placeholder="Elige tu nombre de usuario">
+                <input type="text" id="usuario" name="usuario" placeholder="Elige tu nombre de usuario">
                 <input type="submit" value="Guardar Cambios">
                 <br>
                 <br>
                 <label for="bio"><strong>Biografía:</strong></label>
-                <textarea name="bio" rows="3" cols="35" maxlength="160" placeholder="Añade tu breve biografía como programador"></textarea>
+                <textarea id="bio" name="bio" rows="3" cols="35" maxlength="160" placeholder="Añade tu breve biografía como programador"></textarea>
                 <input type="submit" value="Guardar Cambios">
             </form>
         </section>
