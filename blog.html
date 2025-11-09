@@ -45,7 +45,9 @@
             <textarea type="text" placeholder="Cuéntanos..." ></textarea><br>
         </form>
     <!--Ejemplos de discusiones que se podrían ver en esta página. Así podemos mostrar el formato en el que se presentarían visualmente 
-    y las diferentes opciones de personalización del texto. -->
+    y las diferentes opciones de personalización del texto. Utilizamos en ellas las etiquetas <br>, <b> e <i>, a parte de <em> y <strong>,
+    que aunque visualmente sean similares para el usuario, los navegadores los interpretan semánticamente y si, por ejemplo, utilizamos
+    un lector de pantalla, al leerlo le dará el énfasis necesario para que quien lo escuche pueda saberlo.-->
         <h3>Discusiones</h3>
             <table>
                 <thead>
@@ -75,7 +77,8 @@
                     </td>
                 </tr>
             </table><br><br>
-<!--En esta publicación queremos mostrar una especie de hilo en el que se responde a la publicación principal que lo comienza.-->
+<!--En esta publicación queremos mostrar una especie de hilo en el que se responde a la publicación principal que lo comienza. En ella
+también añadimos la etiqueta <abbr> para poder abreviar lenght.-->
             <table>
                 <thead>
                         <th><strong>Respuesta:</strong><em>¿Por qué mi bucle for no imprime todos los elementos de la lista?</em></th>
@@ -92,13 +95,13 @@
                         Buena pregunta, esto es un error muy común cuando uno empieza con Python.<br>
                         Vamos a desglosarlo paso a paso: <br><br>
                         Cuando haces esto:<br> <br>
-                        <em>for i in range(len(numeros) - 1):</em><br><br>
-                        lo que estás diciendo es que el bucle recorra los valores desde 0 hasta <i>len(numeros) - 2</i>.<br>
-                        Por ejemplo, si tu lista tiene 5 elementos, <i>len(numeros)</i> es 5, y <i>range(5 - 1</i>) genera: <br><br>
+                        <em>for i in <abbr title="length">len</abbr>(numeros) - 1):</em><br><br>
+                        lo que estás diciendo es que el bucle recorra los valores desde 0 hasta <i><abbr title="length">len</abbr>(numeros) - 2</i>.<br>
+                        Por ejemplo, si tu lista tiene 5 elementos, <i><abbr title="length">len</abbr>(numeros)</i> es 5, y <i>range(5 - 1</i>) genera: <br><br>
                         <em>[0, 1, 2, 3]</em><br><br>
                         Por eso el último índice (4, que corresponde al número 5) nunca se usa, y no se imprime<br> 
                         el último elemento. Si escribieras: <br><br>
-                       <em>for i in range(len(numeros)):<br>
+                        <em>for i in range(<abbr title="length">len</abbr>(numeros)):<br>
                         print(numeros[i])</em><br><br>
                         Entonces <i>range(5</i>) generaría [0, 1, 2, 3, 4], e imprimiría todos los elementos correctamente.<br>
                         Pero hay una forma de estilo <em>más Python</em> de hacerlo:<br><br>
@@ -106,8 +109,8 @@
                         <i>for numero in numeros:<br>
                         print(numero)</i><br><br>
                         Python recorrerá automáticamente cada elemento de la lista, sin preocuparte por los índices ni<br> los límites.
-                        En resumen: El error ocurre porque restas 1 al <i>len()</i>, haciendo que el bucle se quede corto. <br>Usa 
-                        <i>range(len(lista))</i> si realmente necesitas los índices. O mejor aún, recorre directamente los elementos <br>de la lista.
+                        En resumen: El error ocurre porque restas 1 al <i><abbr title="length">len()</abbr></i>, haciendo que el bucle se quede corto. <br>Usa 
+                        <i>range(<abbr title="length">len(lista)</abbr>)</i> si realmente necesitas los índices. O mejor aún, recorre directamente los elementos <br>de la lista.
                         <br><br>
                         <strong>¡Sigue practicando! </strong>💪
                     </td>

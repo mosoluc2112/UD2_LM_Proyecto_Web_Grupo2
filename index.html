@@ -32,7 +32,9 @@
             <a href="login.html" target="_blank">Inicia Sesión</a>
         </nav>
     </header>
-    <audio src="media/audio_premium.mp3" controls autoplay loop preload></audio>
+    <audio controls autoplay loop preload>
+        <source src="media/audio_premium.mp3" type="audio/mpeg">
+    </audio>
     <main>
         <!--En la sección de cursos recomendados lo organizamos en una tabla con el objetivo de convertirla posteriormente 
         en un carrusel usando javascript. Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web
@@ -40,23 +42,25 @@
         <h2 id="index">Te recomendamos...</h2>
         <table>
             <tr> <!-- PONER LAS CAPTURAS DE ESTO Y ENLAZARLAS A LOS CURSOS -->
-                <td><iframe width="160" height="90" src="https://www.youtube.com/embed/10GHKjgQIR0"
-                title="¿Qué es HTML? bien explicado" frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-                <td><iframe width="160" height="90" src="https://www.youtube.com/embed/8cSo0ijtkzU"
-                title="¿Qué es CSS? bien explicado" frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
-                <td><iframe width="160" height="90" src="https://www.youtube.com/embed/crBLydQRUsk" 
-                title="¿Qué es Java? En 3 minutos" frameborder="0" allow="accelerometer; autoplay;
-                clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></td>
+                <td><a href="cursos.html#html" target="_blank">
+                <img src="images/html_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de HTML.">
+                </a></td>
+                <td><a href="cursos.html#css" target="_blank">
+                <img src="images/css_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de CSS.">
+                </a></td>
+                <td><a href="cursos.html#java" target="_blank">
+                <img src="images/java_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de Java.">
+                </a></td>
             </tr>
             <tr>
-                <td align="center">HTML</a></td>
+                <td align="center">HTML</td>
                 <td align="center">CSS</td>
                 <td align="center">Java</td>
+            </tr>
+            <tr>
+                <td align="center">Aprende a montar el <br>esqueleto de tu página web.</a></td>
+                <td align="center">Dale forma a tu web.</td>
+                <td align="center">Crea las aplicaciones que<br> desees.</td>
             </tr>
         </table>
         <!--Ponemos ejemplos de profesores y expertos en el tema usando imagenes de stock, debajo de esto nombres inventados para ellos-->
@@ -81,8 +85,21 @@
                     <img src="images/trustpilot.png" width="180px">
                 </a> <br> <br>  
         
-        <!--PONER EL MAPA INTERACTIVO DE GOOGLE DEL TIKTOK-->
+        <!--Introducimos para el mapa interactivo el código que nos proporciona Google Maps con una ubicación aleatoria.
+        No modificamos el código de forma deliberada, aunque si así se prefiriese en un futuro podría hacerse. -->
     </main>
+     <aside>
+        <h3>Puedes encontrarnos en...</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1588.8478822815139!2d-3.6114260858338088!3d37.20745502804024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1762694001023!5m2!1ses!2ses" 
+                width="400" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+     </aside>
 
     <footer>
         <a href="#index">Haz clic aquí para volver al principio de la página</a>
