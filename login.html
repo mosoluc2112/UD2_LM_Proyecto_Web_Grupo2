@@ -25,24 +25,29 @@
         </nav>
     </header>
     <main>
-<!--Creamos un formulario para que el usuario ponga sus datos de inicio de sesión y pueda acceder a su perfil personal.-->
+    <!--Creamos un formulario para que el usuario ponga sus datos de inicio de sesión y pueda acceder a su perfil personal.-->
             <h2 id="login">Inicio de Sesión</h2>
         <form action="perfil.html" method="post">
-            <label>Nombre de Usuario</label><br>
-                <input type="text"  placeholder="Ej: usuario22"> <br> <br>
+            <input type="reset" value="Borrar datos"><br><br>
+            <label for="nombre">Nombre de Usuario</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: usuario22"> <br> <br>
 
-            <label>Correo electrónico</label><br>
-                <input type="email"  placeholder="usuario@correo.es"> <br><br>
-                
-            <label>Contraseña</label> <br>   
-                <input type="password"  min="8" max="64"> <br><br>
-<!--Para dar la sensación de que de verdad hemos inciado sesión hacemos que al pulsar enviar te lleve directamente a la página de perfil.-->            
-            <a href="perfil.html" target="_blank"><input type="submit"></a> <br><br>
+            <label for="correo">Correo electrónico</label><br>
+                <input type="email" id="correo" name="correo" placeholder="usuario@correo.es"> <br><br>
+
+            <!--Ponemos el máximo y mínimo normalizado de caracteres para la contraseña.-->    
+            <label for="contraseña">Contraseña</label> <br>   
+                <input type="password" id="contraseña" name="contraseña" min="8" max="64"> <br><br>
+    <!--Para dar la sensación de que de verdad hemos inciado sesión hacemos que al pulsar enviar te lleve directamente a la página de perfil
+        en vez de usar un input de tipo submit que sería lo normal en este tipo de formularios.-->            
+            <a href="perfil.html" target="_blank">
+                <button type="button">Enviar</button>
+            </a> <br><br>
 
         </form>
     </main>
     <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
-    (email & teléfono), y copyright-->
+        (email & teléfono), y copyright-->
     <footer>
         <a href="#login">Haz clic aquí para volver al principio de la página</a>
         <br>
@@ -62,8 +67,8 @@
             </a>
         </nav>
         <!--Usamos h4 y h5 para mejorar el SEO de la página pese a que el tamaño por defecto sea
-        mucho más pequeño comparado con los headings más importantes, ya que luego podemos
-        modificar su tamaño en CSS-->
+            mucho más pequeño comparado con los headings más importantes, ya que luego podemos
+            modificar su tamaño en CSS-->
         <h5>Contáctanos</h5>
         <a href="mailto:codi_go@gmail.com">Email</a>
         <p>Llámanos al <strong>+34 123456789</strong></p>
