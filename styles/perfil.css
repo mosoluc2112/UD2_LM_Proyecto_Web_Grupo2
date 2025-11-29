@@ -48,7 +48,10 @@ header nav {
 }
 
 nav .nav-link {
-    color: #b3f3f3;
+    color: #003e3e;
+    background-color: rgb(217, 255, 122);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 
