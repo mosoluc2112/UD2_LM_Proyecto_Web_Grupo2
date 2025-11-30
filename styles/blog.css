@@ -1,0 +1,70 @@
+/* Barra de navegación */
+header {
+    background-color: #003e3e;
+    padding: 5px;
+}
+
+.nombre {
+    text-align: center;
+    color: rgb(217, 255, 122);
+}
+
+.eslogan {
+    text-align: center;
+    color: #00baba;
+    font-family: monospace;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.logo {
+    width: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+nav .nav-link {
+    color: #003e3e;
+    background-color: rgb(217, 255, 122);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
+/* Pie de página */
+.footer {
+    background-color: #003e3e;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.clic-index {
+    color: white;
+    text-decoration: none;
+}
+
+.email {
+    color: white;
+}
