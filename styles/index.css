@@ -7,42 +7,16 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-}
-
-.logo {
-    left: 2%;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    width: 15%;
-    height: auto;
-    position: absolute;
-}
-
-.nombre {
-    text-align: center;
-    color: rgb(217, 255, 122);
     align-content: flex-start;
-    justify-content: center;
 }
 
-.eslogan {
-    text-align: center;
-    color: #00baba;
-    font-family: monospace;
-    padding: 5px;
-    font-size: 15px;
-    align-content: flex-start;
-    justify-content: center;
-}
-
-
-header nav {
+.nav-header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
     color: white;
-    width: 70%;
+    width: 100%;
 }
 
 .nav-link {
@@ -51,8 +25,44 @@ header nav {
     padding: 10px;
     border-radius: 20px;
     align-items: right;
+    margin: 0.5%;
+    position: initial;
 }
 
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    color: white;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    position: relative;
+}
+
+.nombre {
+    text-align: center;
+    color: rgb(217, 255, 122);
+    align-content: flex-start;
+    position: fixed;
+    left: 45%;
+    bottom: 87%;
+}
+
+.eslogan {
+    text-align: center;
+    color: #00baba;
+    font-family: monospace;
+    padding-left: 5%;
+    font-size: 15px;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 6%;
+    left: 90%;
+}
 
 /* Pie de página */
 
