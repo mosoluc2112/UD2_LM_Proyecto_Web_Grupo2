@@ -69,14 +69,13 @@ header {
 
 /* Pie de página */
 
-.footer {
+footer {
     background-color: #a1acff;
     color: #382f50;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
-
 }
 
 .clic-index {
