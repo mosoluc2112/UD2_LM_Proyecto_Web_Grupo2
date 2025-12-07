@@ -1,70 +1,89 @@
+body{
+    background-color: #d2e7ff;
+}
+
 /* Barra de navegación */
+
 header {
-    background-color: #003e3e;
+    background-color:#a1acff;
     padding: 5px;
+    height: 30%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    color: white;
+    width: 100%;
+}
+
+.nav-link {
+    color: #382f50;
+    background-color: #8b73c9;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: right;
+    margin: 0.5%;
+    position: initial;
+}
+
+.div-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.logo {
+    width: 15%;
+    height: auto;
+    position: relative;
 }
 
 .nombre {
     text-align: center;
-    color: rgb(217, 255, 122);
+    color: #695797;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 6%;
+    left: 90%;
 }
 
 .eslogan {
     text-align: center;
-    color: #00baba;
+    color: #382f50;
     font-family: monospace;
-    padding: 5px;
+    padding-left: 5%;
     font-size: 15px;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 6%;
+    left: 90%;
 }
-
-.logo {
-    width: 10%;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline;
-}
-
-a {
-    text-decoration: none;
-}
-
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
-}
-
-nav .nav-link {
-    color: #003e3e;
-    background-color: rgb(217, 255, 122);
-    padding: 10px;
-    border-radius: 20px;
-}
-
-
-
-
 
 /* Pie de página */
+
 .footer {
-    background-color: #003e3e;
+    background-color: #a1acff;
+    color: #382f50;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
+
 }
 
 .clic-index {
-    color: white;
+    color: #382f50;
     text-decoration: none;
 }
 
 .email {
-    color: white;
+    color: #382f50;
 }

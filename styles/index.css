@@ -1,7 +1,11 @@
+body{
+    background-color: #d2e7ff;
+}
+
 /* Barra de navegación */
 
 header {
-    background-color: #003e3e;
+    background-color:#a1acff;
     padding: 5px;
     height: 30%;
     display: flex;
@@ -20,8 +24,8 @@ header {
 }
 
 .nav-link {
-    color: #003e3e;
-    background-color: rgb(217, 255, 122);
+    color: #382f50;
+    background-color: #8b73c9;
     padding: 10px;
     border-radius: 20px;
     align-items: right;
@@ -34,7 +38,6 @@ header {
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    color: white;
 }
 
 .logo {
@@ -45,16 +48,16 @@ header {
 
 .nombre {
     text-align: center;
-    color: rgb(217, 255, 122);
-    align-content: flex-start;
-    position: fixed;
-    left: 45%;
-    bottom: 87%;
+    color: #695797;
+    position: relative;
+    margin-top: 20%;
+    margin-bottom: 6%;
+    left: 90%;
 }
 
 .eslogan {
     text-align: center;
-    color: #00baba;
+    color: #382f50;
     font-family: monospace;
     padding-left: 5%;
     font-size: 15px;
@@ -67,18 +70,20 @@ header {
 /* Pie de página */
 
 .footer {
-    background-color: #003e3e;
+    background-color: #a1acff;
+    color: #382f50;
     text-align: center;
     justify-content: center;
     align-items: center;
     padding: 10px;
+
 }
 
 .clic-index {
-    color: white;
+    color: #382f50;
     text-decoration: none;
 }
 
 .email {
-    color: white;
+    color: #382f50;
 }
