@@ -85,6 +85,8 @@ header {
     color: #382f50;
     background-color: #8b73c9;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .seccion-perfil form {
@@ -98,6 +100,8 @@ header {
     text-transform: uppercase;
     background-color: #8b73c9;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .racha-actual {
@@ -133,6 +137,8 @@ header {
     text-transform: uppercase;
     background-color: #8b73c9;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .racha-larga {
@@ -170,6 +176,8 @@ header {
     text-transform: uppercase;
     background-color: #8b73c9;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .progreso {
@@ -194,6 +202,8 @@ header {
     text-transform: uppercase;
     background-color: #8b73c9;
     border-radius: 20px;
+    display: inline-block;
+    padding: 10px;
 }
 
 .certificados {
