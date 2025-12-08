@@ -79,6 +79,10 @@ footer {
 
 }
 
+footer nav {
+    text-decoration: none;
+}
+
 .clic-index {
     color: #382f50;
     text-decoration: none;
