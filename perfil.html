@@ -6,14 +6,6 @@
     <!--Elegimos el nombre de la página que aparece en la pestaña del navegador en función del contenido que se vaya a mostrar-->
     <title>Perfil</title>
     <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-        table {
-            border-collapse: collapse;
-        }
-    </style>
     <link rel="stylesheet" href="/styles/perfil.css">
 </head>
 <body>
@@ -40,101 +32,119 @@
     </header>
     <!--El main de perfil.html se divide en 2 secciones y 1 aside-->
     <main>
+        <!--Botón de "Haz clic aquí para volver al principio de la página"-->
+        <div class="clic-index">
+            <a href="#perfil">
+                <img src="/images/flecha_arriba.png">
+            </a>
+        </div>
         <!--En la primera sección tenemos un formulario para que el usuario pueda elegir/modificar
             su foto de perfil, nombre de usuario y biografía, así como elegir los pronombres con los
             que se identifica-->
-        <section class="seccion-perfil">
-            <h2 id="perfil">Mi perfil</h2>
-            <p>Puedes actualizar tu información cuando quieras. ¡Haz que tu perfil refleje tu
-                estilo como programador!</p>            
-            <form>
-                <label for="foto_perfil"><strong>Foto de perfil:</strong></label>
-                <img src="/images/foto_perfil_usuario.png" width="70px" alt="Foto de perfil">
-                <input type="file" id="foto_perfil" name="foto_perfil">
-                <br>
-                <br>
-                <label for="genero"><strong>Género:</strong></label>
-                <input type="radio" id="genero" name="genero">M
-                <input type="radio" id="genero" name="genero">F
-                <input type="radio" id="genero" name="genero">Otro
-                <br>
-                <br>
-                <label for="usuario"><strong>Nombre de usuario:</strong></label>
-                <input type="text" id="usuario" name="usuario" placeholder="Elige tu nombre de usuario">
-                <input type="submit" value="Guardar Cambios">
-                <br>
-                <br>
-                <label for="bio"><strong>Biografía:</strong></label>
-                <textarea id="bio" name="bio" rows="3" cols="35" maxlength="160" placeholder="Añade tu breve biografía como programador"></textarea>
-                <input type="submit" value="Guardar Cambios">
-            </form>
-        </section>
-        <!--La segunda sección se divide en 3 artículos-->
-        <section>
-            <!--El primer artículo es para indicar los días de racha que lleva el usuario así como
-                indicar mediante una tabla el día de la semana en el que nos encontramos y cuál fue
-                la última racha más larga que tuvo-->
-            <article>
-                <h4>Racha Actual</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="7">
-                                <img src="images/icono_racha_verde.svg" width="20px"><b>0</b> días</th> <!--Incluir aquí un icono para asociarlo al concepto racha-->
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>L</td>
-                            <td>M</td>
-                            <td>M</td>
-                            <td>J</td>
-                            <td>V</td>
-                            <td>S</td>
-                            <td>D</td>
-                        </tr>
-                    </tbody>
-                    <footer>
-                        <tr>
-                            <td colspan="7">¡Completa una lección y comienza ahora tu racha!</td>
-                        </tr>
-                    </footer>
-                </table>
-                <h4>Racha más larga</h4>
-                <table>
-                    <tr>
-                        <td colspan="7">
-                            <img src="images/icono_racha_naranja.svg" width="20px"></td>
-                    </tr>
-                    <tr>
-                        <td><b>0</b> días</td>
-                    </tr>
-                </table>
-            </article>
-            <!--En el segundo artículo mostramos el progreso de los cursos que ya ha empezado el usuario-->
-            <article>
-                <h4>Progreso de mis cursos</h4>
-                <ul>
-                    <li>Curso 1: %</li>
-                    <li>Curso 2: %</li>
-                    <li>Curso 3: %</li>
-                </ul>
-            </article>
-            <!--En el tercer artículo mostramos los certificados que ha obtenido al finalizar cada
-                curso, los cuales no tienen gran validez si su cuenta no es premium-->
-            <article>
-                <h4>Mis certificados</h4>
-                <ol>
-                    <li>Certificado 1</li>
-                    <li>Certificado 2</li>
-                    <li>Certificado 3</li>
-                </ol>
-            </article>
-        </section>
+        <div class="perfil-contenedor">
+            <section class="seccion-perfil">
+                <div class="mi-perfil">
+                    <h2 id="perfil">Mi perfil</h2>
+                    <p>Puedes actualizar tu información cuando quieras.<br>¡Haz que tu perfil refleje tu
+                        estilo como programador!</p>  
+                </div>          
+                <form>
+                    <label for="foto_perfil"><strong>Foto de perfil:</strong></label><br>
+                    <img src="/images/foto_perfil_usuario.png" width="70px" alt="Foto de perfil"><br>
+                    <input type="file" id="foto_perfil" name="foto_perfil">
+                    <br>
+                    <br>
+                    <label for="genero"><strong>Género:</strong></label>
+                    <input type="radio" id="genero" name="genero">M
+                    <input type="radio" id="genero" name="genero">F
+                    <input type="radio" id="genero" name="genero">Otro
+                    <br>
+                    <br>
+                    <label for="usuario"><strong>Nombre de usuario:</strong></label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="Elige tu nombre de usuario">
+                    <input type="submit" value="Guardar Cambios">
+                    <br>
+                    <br>
+                    <label for="bio"><strong>Biografía:</strong></label><br>
+                    <textarea id="bio" name="bio" rows="4" cols="37" maxlength="160" placeholder="Añade tu breve biografía como programador"></textarea><br>
+                    <input type="submit" value="Guardar Cambios">
+                </form>
+            </section>
+            <!--La segunda sección se divide en 3 artículos-->
+            <section class="seccion-rachas">
+                <!--El primer artículo es para indicar los días de racha que lleva el usuario así como
+                    indicar mediante una tabla el día de la semana en el que nos encontramos y cuál fue
+                    la última racha más larga que tuvo-->
+                <article>
+                    <div class="racha-actual">
+                        <h4>Racha Actual</h4>
+                        <table class="table-1">
+                            <thead>
+                                <tr>
+                                    <th colspan="7">
+                                        <img src="images/icono_racha_verde.svg" width="20px"><br><b>0</b> días</th> <!--Incluir aquí un icono para asociarlo al concepto racha-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L</td>
+                                    <td>M</td>
+                                    <td>M</td>
+                                    <td>J</td>
+                                    <td>V</td>
+                                    <td>S</td>
+                                    <td>D</td>
+                                </tr>
+                            </tbody>
+                            <footer>
+                                <tr>
+                                    <td colspan="7">¡Completa una lección y comienza ahora tu racha!</td>
+                                </tr>
+                            </footer>
+                        </table>
+                    </div>
+                    <div class="racha-larga">
+                        <h4>Racha más larga</h4>
+                        <table class="table-2">
+                            <thead>
+                                <tr>
+                                    <td colspan="7">
+                                        <img src="images/icono_racha_naranja.svg" width="20px"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><b>0</b> días</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <!--En el segundo artículo mostramos el progreso de los cursos que ya ha empezado el usuario-->
+                <article class="progreso">
+                    <h4>Progreso de mis cursos</h4>
+                    <ul>
+                        <li>Curso 1: %</li>
+                        <li>Curso 2: %</li>
+                        <li>Curso 3: %</li>
+                    </ul>
+                </article>
+                <!--En el tercer artículo mostramos los certificados que ha obtenido al finalizar cada
+                    curso, los cuales no tienen gran validez si su cuenta no es premium-->
+                <article class="certificados">
+                    <h4>Mis certificados</h4>
+                    <ol>
+                        <li>Certificado 1</li>
+                        <li>Certificado 2</li>
+                        <li>Certificado 3</li>
+                    </ol>
+                </article>
+            </section>
+        </div>
         <!--En el aside van los enlaces de interés o información complementaria que se verán
             en una barra lateral: Ponemos el enlace a la página para hacerte un perfil premium-->
         <aside>
-            <h4>Hazte premium</h4>
+            <h4>Hazte premium!</h4>
             <p>Disfruta de la experiencia completa y aprovéchate de las ventajas que ofrecemos.</p>
             <a href="premium.html">Los 30 primeros días son <strong><em>GRATIS!</em></strong></a>
         </aside>
@@ -142,7 +152,7 @@
     <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
         (email & teléfono), y copyright-->
     <footer>
-        <a href="#perfil" class="clic-index">Haz clic aquí para volver al principio de la página</a>
+        
         <br>
         <br>
         <!--Ponemos los enlaces a las redes sociales dentro de <nav> en el footer para poder acceder a ellas.

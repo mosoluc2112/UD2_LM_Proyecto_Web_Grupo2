@@ -57,6 +57,167 @@ header {
     margin: 3px;
 }
 
+/* Sección 'Mi Perfil' */
+.perfil-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px;
+}
+.seccion-perfil {
+    display: inline-block;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 20px;
+}
+
+.mi-perfil {
+    text-align: center;
+}
+
+#perfil {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #382f50;
+}
+
+.seccion-perfil form {
+    width: 100%;
+}
+
+/* Racha actual */
+.racha-actual h4 {
+    margin-bottom: 0;
+    color: #382f50;
+    text-transform: uppercase;
+}
+
+.racha-actual {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+}
+
+.table-1 {
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-1 th, .table-1 td {
+    background-color: white;
+    border: solid 3px #382f50;
+    border-radius: 10px;
+    border-style:groove;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Racha más larga */
+.racha-larga h4 {
+    margin-bottom: 20px;
+    color: #382f50;
+    text-transform: uppercase;
+}
+
+.racha-larga {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 15px;
+}
+
+.table-2 {
+    margin: 0 auto; /* Para centrar la tabla */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-2 th, .table-2 td {
+    background-color: white;
+    border: solid 3px #382f50;
+    border-radius: 10px;
+    border-style:groove;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Artículo de progresos */
+.progreso h4 {
+    margin-bottom: 20px;
+    color: #382f50;
+    text-transform: uppercase;
+}
+
+.progreso {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: 0;
+    width: 50%;
+}
+
+/* Artículo de certificados */
+.certificados h4 {
+    margin-bottom: 20px;
+    color: #382f50;
+    text-transform: uppercase;
+}
+
+.certificados {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    margin: 10px;
+    margin-left: 8px;
+    margin-top: 20px;
+    width: 30%;
+}
+
+/* Aside */
+aside {
+    text-align: center;
+    background-color: #382f50;
+    color:white;
+    padding: 2px;
+    padding-bottom: 20px;
+}
+
+aside h4 {
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+aside a {
+    color: white;
+}
+
 /* Pie de página */
 
 footer {
@@ -70,8 +231,18 @@ footer {
 }
 
 .clic-index {
-    color: #382f50;
-    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #382f50;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.clic-index img {
+    width: 60px;
 }
 
 .email {
