@@ -24,11 +24,6 @@ header {
 }
 
 /* Nombre y eslogan */
-.name-slogan {
-    display: flex;
-    flex-direction: column;
-}
-
 .nombre {
     color: #695797;
     margin: 0;

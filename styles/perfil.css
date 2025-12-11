@@ -24,11 +24,6 @@ header {
 }
 
 /* Nombre y eslogan */
-.name-slogan {
-    display: flex;
-    flex-direction: column;
-}
-
 .nombre {
     color: #695797;
     margin: 0;
@@ -203,6 +198,10 @@ header {
     width: 50%;
 }
 
+.progreso ul {
+    list-style-type: none;
+}
+
 /* Artículo de certificados */
 .certificados h4 {
     margin-bottom: 20px;
@@ -226,6 +225,11 @@ header {
     margin-left: 8px;
     margin-top: 20px;
     width: 30%;
+}
+
+.certificados ol {
+    list-style-type: none;
+    text-align: left;
 }
 
 /* Aside */
