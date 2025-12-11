@@ -48,6 +48,14 @@ header {
     position:static;
 }
 
+.nav-link:hover {
+    background-color: #d2e7ff;
+}
+
+.here {
+    background-color: #d2e7ff;
+}
+
 /* Pie de página */
 
 footer {
