@@ -277,8 +277,8 @@ footer {
     width: 60px;
 }
 
-.email {
-    color: #382f50;
+footer h5 {
+    margin-bottom: 2px;
 }
 
 .copy {
