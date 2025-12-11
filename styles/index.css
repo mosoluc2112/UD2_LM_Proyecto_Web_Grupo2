@@ -65,8 +65,8 @@ footer {
     text-decoration: none;
 }
 
-.email {
-    color: #382f50;
+footer h5 {
+    margin-bottom: 2px;
 }
 
 .copy {
