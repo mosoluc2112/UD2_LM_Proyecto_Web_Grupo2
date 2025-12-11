@@ -60,6 +60,73 @@ header {
     background-color: #d2e7ff;
 }
 
+/* Sección Cursos */
+/* No sé como centrar esto de forma que HTML, CSS y Javascript queden centrados arriba
+y Java y Python centrados debajo. */
+#cursos {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #737ac9;
+}
+
+.seccion-cursos {
+    display: flex;
+    padding: 30px;
+    text-align: justify;
+    margin: 30px;
+    border: solid 5px blue;
+}
+.div-html-css-javascript {
+    display: ;
+}
+
+.div-html-css-javascript, .div-java-python {
+    text-align: justify;
+    padding: 20px;
+}
+
+.seccion-cursos iframe {
+    width: 300px;
+    height: 169px;
+}
+
+/* Sección Formulario de Cursos */
+.formulario-cursos {
+    display: inline-block;
+    width: 40%;
+    align-items: center;
+    margin-left: 360px;
+    background-color: #e4d9ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px #382f50;
+    border-style: dashed;
+}
+
+.formulario-cursos legend {
+    text-align: center;
+    color: #382f50;
+}
+
+.formulario-cursos:hover {
+    border: solid 2px #8b73c9;
+    border-style: dashed;
+    background-color: white;
+}
+
+.formulario-cursos legend {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.button:hover {
+    background-color: #382f50;
+    color: #a1acff;
+}
+
+
 /* Pie de página */
 
 footer {
@@ -73,8 +140,18 @@ footer {
 }
 
 .clic-index {
-    color: #382f50;
-    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #382f50;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.clic-index img {
+    width: 60px;
 }
 
 .email {

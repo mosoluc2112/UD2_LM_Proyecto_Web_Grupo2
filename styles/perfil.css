@@ -61,7 +61,7 @@ header {
 }
 
 /* Sección 'Mi Perfil' */
-.perfil-contenedor {
+.contenedor-perfil {
     display: flex;
     justify-content: center;
     align-items: flex-start;
