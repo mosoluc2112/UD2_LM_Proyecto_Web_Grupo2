@@ -47,6 +47,52 @@ header {
     border-radius: 20px;
     position:static;
 }
+/* Main */
+.principal-index{
+    width: 100%;
+    display: flex;
+    align-items: stretch; /*ESTO ERA PARA QUE EL ASIDE FUERA DE ARRIBA A ABAJO PERO NO HACE NA*/
+}
+
+main{
+    width: 80%;
+}
+
+.caja-grande-index{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    color: #382f50;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 20px;
+}  /*tengo que sacar cada cosa de la tabla y ponerlo en su propio div para poder alinearlos bien*/
+
+/*Aside*/
+aside{
+    background-color: #695797;
+    width: 20%;
+    height: 100%; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    position: relative;
+    flex-direction: column; /*PROBÉ CON ESTO PARA VER SI ASÍ BAJABA Y TAMPOCO*/ 
+    color: #d2e7ff;
+    text-align: center;
+    /*NO CONSIGO QUE BAJE EL BACKGROUND COLOR DEL ASIDE HASTA EL FOOTER */
+}
+
+aside iframe {
+    padding: 5%;
+}
+
+audio{
+    padding: 5%;
+}
 
 /* Pie de página */
 

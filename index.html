@@ -38,13 +38,13 @@
             <a href="login.html" target="_blank" class="nav-link">Inicia Sesión</a>
         </nav>
     </header>
-    <audio controls autoplay loop preload>
-        <source src="media/audio_premium.mp3" type="audio/mpeg">
-    </audio>
+
+    <div class="principal-index"> <!--Ponemos este contenedor para poder colocar el main y el aside cada uno a un lado de la página y que se vea como corresponde -->
     <main>
         <!--En la sección de cursos recomendados lo organizamos en una tabla con el objetivo de convertirla posteriormente
             en un carrusel usando javascript. Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web
             de cursos, con el objetivo de que redirija al usuario allí. -->
+        <div class="caja-grande-index">
         <h2 id="index">Te recomendamos...</h2>
         <table>
             <tr>
@@ -69,8 +69,10 @@
                 <td text-align="center">Crea las aplicaciones que<br> desees.</td>
             </tr>
         </table>
+        </div>
         <!--Ponemos ejemplos de profesores y expertos en el tema usando imagenes de stock, debajo de esto nombres inventados para ellos-->
         <!--Lo organizamos en una tabla con el objetivo de convertirla posteriormente en un carrusel usando javascript.-->
+        <div class="caja-grande-index">
         <h2>¡Nuestros expertos nos avalan!</h2>
         <table>
             <tr>
@@ -84,6 +86,7 @@
                 <td text-align="center"><b>José Osorio:</b><br> Experto en JavaScript</td>
             </tr>
         </table>
+        </div>
         <h2>Opiniones de nuestros alumnos</h2>
         <!--Enlace a trustpilot para que los usuarios vean o dejen opiniones. Como no es una página real ponemos sólo el enlace a la página principal de Truspilot.-->
             <nav>
@@ -98,14 +101,19 @@
         <h3>Puedes encontrarnos en...</h3>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1588.8478822815139!2d-3.6114260858338088!3d37.20745502804024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1762694001023!5m2!1ses!2ses"
-                width="400"
-                height="300"
+                width="300"
+                height="187"
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+        <!--Movemos de sitio el audio, ya que como ahora sí saldrá en la parte de arriba de la página al estar el aside configurado de esta manera no será necesario que esté suelto encima del main-->
+        <audio controls autoplay loop preload>
+            <source src="media/audio_premium.mp3" type="audio/mpeg">
+        </audio>
      </aside>
+    </div>
      <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
         (email & teléfono), y copyright-->
     <footer>
