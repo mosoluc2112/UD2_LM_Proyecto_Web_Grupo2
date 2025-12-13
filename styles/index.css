@@ -51,7 +51,7 @@ header {
 .principal-index{
     width: 100%;
     display: flex;
-    align-items: stretch; /*ESTO ERA PARA QUE EL ASIDE FUERA DE ARRIBA A ABAJO PERO NO HACE NA*/
+ /*ESTO ERA PARA QUE EL ASIDE FUERA DE ARRIBA A ABAJO PERO NO HACE NA*/
 }
 
 main{
@@ -59,9 +59,7 @@ main{
 }
 
 .caja-grande-index{
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
+    display: relative;
     color: #382f50;
     background-color: #a1acff;
     border: solid 5px #8b73c9;
@@ -69,14 +67,33 @@ main{
     border-style: outset;
     padding: 10px;
     margin: 20px;
-}  /*tengo que sacar cada cosa de la tabla y ponerlo en su propio div para poder alinearlos bien*/
+}
+
+.caja-tarjetas-index{
+    justify-content: space-between;
+    display: flex;
+}
+
+.tarjeta-index{
+    border: #382f50 solid;
+    background-color: #d2e7ff;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+    width: 30%;
+}
+
+.tarjeta-index img{
+    padding-top: 2%;
+    border-radius: 20px;
+}
 
 /*Aside*/
 aside{
     background-color: #695797;
     width: 20%;
     height: 100%; 
-    margin: 0;
     padding: 20px;
     display: flex;
     position: relative;
@@ -87,11 +104,20 @@ aside{
 }
 
 aside iframe {
-    padding: 5%;
+    height: 20%;
+    width: 90%;
+    padding-bottom: 10%;
+    align-self: center;
 }
 
 audio{
-    padding: 5%;
+    width: 90%;
+    align-self: center;
+}
+
+.opiniones-index{
+    margin-top: 100%;
+    font-size: 12px;
 }
 
 /* Pie de página */

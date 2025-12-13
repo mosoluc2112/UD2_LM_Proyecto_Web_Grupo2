@@ -33,20 +33,20 @@
     <!--Creamos un formulario para que el usuario ponga sus datos de inicio de sesión y pueda acceder a su perfil personal.-->
             <h2 id="login">Inicio de Sesión</h2>
         <form action="perfil.html" method="post">
-            <input type="reset" value="Borrar datos"><br><br>
+            <input type="reset" value="Borrar datos" class="boton-login"><br><br>
             <label for="nombre">Nombre de Usuario</label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej: usuario22"> <br> <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: usuario22" class="cuadrostexto-login"> <br> <br>
 
             <label for="correo">Correo electrónico</label><br>
-                <input type="email" id="correo" name="correo" placeholder="usuario@correo.es"> <br><br>
+                <input type="email" id="correo" name="correo" placeholder="usuario@correo.es" class="cuadrostexto-login"> <br><br>
 
             <!--Ponemos el máximo y mínimo normalizado de caracteres para la contraseña.-->    
             <label for="contraseña">Contraseña</label> <br>   
-                <input type="password" id="contraseña" name="contraseña" min="8" max="64"> <br><br>
+                <input type="password" id="contraseña" name="contraseña" min="8" max="64" class="cuadrostexto-login"> <br><br>
             <!--Para dar la sensación de que de verdad hemos inciado sesión hacemos que al pulsar enviar te lleve directamente a la página de perfil
                 en vez de usar un input de tipo submit que sería lo normal en este tipo de formularios.-->            
             <a href="perfil.html" target="_blank">
-                <button type="button">Enviar</button>
+                <button type="button" class="boton-login">Enviar</button>
             </a> <br><br>
         </form>
     </main>
