@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Elegimos el nombre de la página que aparece en la pestaña del navegador en función del contenido que se vaya a mostrar-->
     <title>Hazte Premium</title>
-    <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->    
+    <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->
+    <!--Lo hemos movido a la hoja de estilos para poder customizarlo mejor-->    
     <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-        table {
-            border-collapse: collapse;
-        }
+        
     </style>
     <link rel="stylesheet" href="/styles/premium.css">
 </head>
@@ -41,8 +37,9 @@
     <!--El main de premium.html se divide en 3 secciones-->
     <main>
         <!--En la primera sección hacemos una breve introducción sobre la versión premium-->
-        <section>
-            <h3 id="premium">CodiGo Premium: el siguiente nivel está en tu aprendizaje digital</h3>
+        <div class="contenedor-info-premium">
+        <section class="texto-premium">
+            <h3 id="premium">💻CodiGo Premium: el siguiente nivel está en tu aprendizaje digital🧠</h3>
             <p>En <b>CodiGo</b>, creemos que aprender a programar no debería ser aburrido
                 ni complicado. Por eso hemos creado <strong><em>CodiGo Premium</em></strong>,
                 una versión diseñada para quienes desean ir más allá. Con esta modalidad,
@@ -57,42 +54,42 @@
         </section>
         <!--En la segunda sección, con una tabla, mostramos las ventajas premium y las comparamos con
             los servicios de los que el usuario se puede aprovechar en la versión gratuita-->
-        <section>
+        <section class="seccion-tabla">
             <table>
                 <thead>
                     <th colspan="2">Ventajas de CodiGo Premium:</th>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td rowspan="4">Plan gratuito</td>
+                    <tr class="plan-gratuito">
+                        <td class="celda-gratuito" rowspan="4">Plan gratuito</td>
                         <td>Acceso a cursos básicos de HTML, CSS y Python.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-gratuito">
                         <td>Progreso guardado en tu perfil.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-gratuito">
                         <td>Participación en foros y comentarios del blog.</td>
                     </tr>
-                    <tr>
-                        <td>Publicidad ocasional dentro de la plataforma.</td>
+                    <tr class="plan-gratuito">
+                        <td class="ult-celda-gratuito">Publicidad ocasional dentro de la plataforma.</td>
                     </tr>
-                    <tr>
-                        <td rowspan="6">Plan premium</td>
+                    <tr class="plan-premium">
+                        <td class="celda-premium" rowspan="6">Plan premium</td>
                         <td>Acceso ilimitado a todos los cursos, proyectos y retos interactivos.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-premium">
                         <td>Cursos exclusivos con contenido avanzado y certificaciones oficiales.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-premium">
                         <td>Modo sin conexión para seguir aprendiendo donde quieras.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-premium">
                         <td>Experiencia <b>sin anuncios</b> para concentrarte en lo importante: aprender.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-premium">
                         <td>Comunidad premium para colaborar con otros aprendices y mentores.</td>
                     </tr>
-                    <tr>
+                    <tr class="plan-premium">
                         <td>Tutorías online con nuestros mejores expertos.</td>
                     </tr>
                 </tbody>
@@ -103,18 +100,21 @@
                 </tfoot>
             </table>
             <br>
-            <dd>“Aprender a programar es enseñarle al mundo cómo piensas.”</dd>
-            <br>
-            <dd>“La educación no es solo adquirir conocimiento, sino aprender a transformar
-                ese conocimiento en acción. En CodiGo creemos que cada línea de código escrita
-                es un paso hacia un futuro más libre, creativo y conectado.”
-                — Equipo de Desarrollo de CodiGo</dd>
+            <div class="citas">
+                <dd>“Aprender a programar es enseñarle al mundo cómo piensas.”</dd>
+                <br>
+                <dd>“La educación no es solo adquirir conocimiento, sino aprender a transformar
+                    ese conocimiento en acción. En CodiGo creemos que cada línea de código escrita
+                    es un paso hacia un futuro más libre, creativo y conectado.”
+                    — Equipo de Desarrollo de CodiGo</dd>
+            </div>
         </section>
+        </div>
         <br>
         <!--En la tercera sección tenemos un formulario para que el usuario, si está interesado,
             pueda cambiar su cuenta a premium-->
         <section class="seccion-premium">
-            <h3>Rellena el siguiente formulario para hacerte premium</h3>
+            <h3>✨Rellena el siguiente formulario para hacerte premium✨</h3>
             <div class="contenedor-form-premium">
                 <form class="formulario-premium" id="premium">
                     <fieldset>
