@@ -1,5 +1,3 @@
-/* funciona ya o qué???? */
-
 body{
     font-family: "Poppins", sans-serif;
     background-color: #d2e7ff;
@@ -253,7 +251,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: block;
-    padding: 10px; /*Hay que borrar esto porque es lo que hace que salga una franja en mitad de la página*/
+    padding: 10px;
 }
 
 .clic-index {

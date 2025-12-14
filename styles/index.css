@@ -83,8 +83,25 @@ main{
     width: 30%;
 }
 
+.tarjeta-index-imgcorta {
+    border: #382f50 solid;
+    background-color: #d2e7ff;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: 1%;
+    width: 30%;
+    align-self: center;
+}
+
 .tarjeta-index img{
     padding-top: 2%;
+    border-radius: 20px;
+}
+
+.tarjeta-index-imgcorta{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     border-radius: 20px;
 }
 
@@ -96,7 +113,6 @@ aside{
     width: 20%;
     padding: 20px;
     text-align: center;
-    /*NO CONSIGO QUE BAJE EL BACKGROUND COLOR DEL ASIDE HASTA EL FOOTER */
 }
 
 aside iframe {

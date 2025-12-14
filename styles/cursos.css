@@ -152,7 +152,6 @@ header {
 
 
 /* Pie de página */
-
 footer {
     background-color: #a1acff;
     color: #382f50;
@@ -160,7 +159,7 @@ footer {
     justify-content: center;
     align-items: center;
     display: block;
-    padding: 10px; /*Hay que borrar esto porque es lo que hace que salga una franja en mitad de la página*/
+    padding: 10px; 
 }
 
 .clic-index {
