@@ -2,6 +2,11 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: #d2e7ff;
     margin: 0; /*Elimina los margenes alrededor de los elementos.*/
+    background-image: url(/images/background-login.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 
 header {
