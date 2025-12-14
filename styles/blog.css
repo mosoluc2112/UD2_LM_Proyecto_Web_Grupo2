@@ -167,6 +167,10 @@ footer {
     padding: 10px; /*Hay que borrar esto porque es lo que hace que salga una franja en mitad de la página*/
 }
 
+footer nav a {
+    text-decoration: none; 
+}
+
 .clic-index {
     width: 60px;
     height: 60px;
