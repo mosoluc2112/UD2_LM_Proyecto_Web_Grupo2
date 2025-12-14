@@ -90,20 +90,44 @@ header {
     top: 20px;
 }
 
-table, th, td {
-    border: solid 2px #382f50;
+table, td {
     padding: 8px;
+}
+
+th, tfoot td {
+    padding: 12px;
+    font-size: 20px;
+    font-family: monospace;
 }
 
 table {
     border-collapse: collapse;
     background-color: white;
-    border: solid 2px #382f50;
     width: 95%;
+    border: solid 5px #a1acff;
+    border-style: outset;
+    border-radius: 20px;
+}
+
+th {
+    border-bottom: solid 2px #a1acff;
+}
+
+thead, tfoot {
+    background-color: #382f50;
+    color: #a1acff;
+    font-style: italic;
+    text-align: center;
+}
+
+tfoot a {
+    color: #a1acff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .plan-gratuito {
-    background-color:#695797;
+    background-color: #695797;
     color: #382f50;
 }
 
@@ -112,18 +136,19 @@ table {
     text-transform: uppercase;
     color: #695797;
     font-weight: bolder;
+    font-size: 24px;
     text-align: center;
     width: 35%;
     border-bottom: solid 2px #a1acff;
+    border-right: solid 2px #a1acff;
 }
 
 .ult-celda-gratuito {
     border-bottom: solid 2px #a1acff;
 }
 
-.plan-premium {
-    background-color: #695797;
-    color: #a1acff;
+.plan-gratuito:nth-child(odd) {
+    background-color: #8b73c9;
 }
 
 .celda-premium {
@@ -131,20 +156,24 @@ table {
     text-transform: uppercase;
     color: #a1acff;
     font-weight: bolder;
+    font-size: 24px;
     text-align: center;
+    border-bottom: solid 2px #a1acff;
+    border-right: solid 2px #a1acff;
 }
 
-thead, tfoot {
-    background-color: #382f50;
-    color: #a1acff;
-    text-transform: uppercase;
-    font-style: italic;
-    text-align: center;
+.ult-celda-premium {
+    border-bottom: solid 2px #a1acff;
 }
 
-tfoot a {
-    color: #a1acff;
-    font-weight: bold;
+.plan-premium:nth-child(even) {
+    background-color: #e2e3e5;
+    color: #382f50;
+}
+
+.plan-premium:nth-child(odd) {
+    background-color: #c4c8cb;
+    color: #382f50;
 }
 
 /* Citas */
