@@ -113,79 +113,81 @@
         <br>
         <!--En la tercera sección tenemos un formulario para que el usuario, si está interesado,
             pueda cambiar su cuenta a premium-->
-        <section>
+        <section class="seccion-premium">
             <h3>Rellena el siguiente formulario para hacerte premium</h3>
-            <form id="premium">
-                <fieldset>
-                    <legend><b>Datos de contacto y personales</b></legend>
-                    <label for="nombre">Nombre y apellidos:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Paula Morales" disabled>
+            <div class="contenedor-form-premium">
+                <form class="formulario-premium" id="premium">
+                    <fieldset>
+                        <legend><b>Datos de contacto y personales</b></legend>
+                        <label for="nombre">Nombre y apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Paula Morales" disabled>
+                        <br>
+                        <br>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="paulamorales@gmail.com" disabled>
+                        <br>
+                        <br>
+                        <label for="tlf">Teléfono:</label>
+                        <input type="tel" id="tlf" name="tlf" placeholder="+34 123 456 789">
+                        <br>
+                        <br>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha">
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="18" max="100">
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Datos de pago</b></legend>
+                        <label for="pago">Método de pago:*</label>
+                        <select id="pago" name="pago" required>
+                            <option>Tarjeta de crédito</option>
+                            <option>PayPal</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="n_tarjeta">Número de tarjeta:*</label>
+                        <input type="text" id="n_tarjeta" name="n_tarjeta" placeholder="0000 0000 0000 0000" required>
+                        <br>
+                        <br>
+                        <label for="fecha_cad">Fecha de caducidad:*</label>
+                        <input type="date" id="n_tarjeta" name="fecha_cad" required>
+                        <br>
+                        <br>
+                        <!--Aquí no he puesto 000 como mínimo porque al meterme en la página después
+                            te deja meter una unidad de número, como el 1, y como tiene que ser una cifra
+                            de 3 números, he puesto 100 como mínimo-->
+                        <label for="cvv">CVV:*</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="000" min="100" max="999" required>
+                        <br>
+                        <br>
+                        <label for="titular">Titular de la tarjeta:*</label>
+                        <input type="text" id="titular" name="titular" placeholder="Claudia Pérez" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Detalles académicos para personalizar tu experiencia</b></legend>
+                        <label for="aprendizaje">Elige tu objetivo principal:</label>
+                        <br>
+                        <input type="radio" id="aprendizaje" name="aprendizaje">Aprender desde creo
+                        <br>
+                        <input type="radio" id="aprendizaje" name="aprendizaje">Mejorarar mis habilidades
+                        <br>
+                        <input type="radio" id="aprendizaje" name="aprendizaje">Preparar entrevistas técnicas
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Confirmaciones y consentimiento</b></legend>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">He leído y acepto los términos del servicio
+                            y la política de privacidad.</label>
+                        <br>
+                        <input type="checkbox" id="publi" name="publi">
+                        <label for="publi">Acepto suscribirme al newsletter de CodiGo para
+                            recibir todas las novedades y ofertas.</label>
+                    </fieldset>
                     <br>
-                    <br>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" name="correo" placeholder="paulamorales@gmail.com" disabled>
-                    <br>
-                    <br>
-                    <label for="tlf">Teléfono:</label>
-                    <input type="tel" id="tlf" name="tlf" placeholder="+34 123 456 789">
-                    <br>
-                    <br>
-                    <label for="fecha">Fecha de nacimiento:</label>
-                    <input type="date" id="fecha" name="fecha">
-                    <label for="edad">Edad:</label>
-                    <input type="number" id="edad" name="edad" min="18" max="100">
-                </fieldset>
-                <fieldset>
-                    <legend><b>Datos de pago</b></legend>
-                    <label for="pago">Método de pago:*</label>
-                    <select id="pago" name="pago" required>
-                        <option>Tarjeta de crédito</option>
-                        <option>PayPal</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="n_tarjeta">Número de tarjeta:*</label>
-                    <input type="text" id="n_tarjeta" name="n_tarjeta" placeholder="0000 0000 0000 0000" required>
-                    <br>
-                    <br>
-                    <label for="fecha_cad">Fecha de caducidad:*</label>
-                    <input type="date" id="n_tarjeta" name="fecha_cad" required>
-                    <br>
-                    <br>
-                    <!--Aquí no he puesto 000 como mínimo porque al meterme en la página después
-                        te deja meter una unidad de número, como el 1, y como tiene que ser una cifra
-                        de 3 números, he puesto 100 como mínimo-->
-                    <label for="cvv">CVV:*</label>
-                    <input type="number" id="cvv" name="cvv" placeholder="000" min="100" max="999" required>
-                    <br>
-                    <br>
-                    <label for="titular">Titular de la tarjeta:*</label>
-                    <input type="text" id="titular" name="titular" placeholder="Claudia Pérez" required>
-                </fieldset>
-                <fieldset>
-                    <legend><b>Detalles académicos para personalizar tu experiencia</b></legend>
-                    <label for="aprendizaje">Elige tu objetivo principal:</label>
-                    <br>
-                    <input type="radio" id="aprendizaje" name="aprendizaje">Aprender desde creo
-                    <br>
-                    <input type="radio" id="aprendizaje" name="aprendizaje">Mejorarar mis habilidades
-                    <br>
-                    <input type="radio" id="aprendizaje" name="aprendizaje">Preparar entrevistas técnicas
-                </fieldset>
-                <fieldset>
-                    <legend><b>Confirmaciones y consentimiento</b></legend>
-                    <input type="checkbox" id="acepto" name="acepto" required>
-                    <label for="acepto">He leído y acepto los términos del servicio
-                        y la política de privacidad.</label>
-                    <br>
-                    <input type="checkbox" id="publi" name="publi">
-                    <label for="publi">Acepto suscribirme al newsletter de CodiGo para
-                        recibir todas las novedades y ofertas.</label>
-                </fieldset>
-                <br>
-                <input type="submit">
-                <input type="reset">
-            </form>
+                    <input type="submit" class="button">
+                    <input type="reset" class="button">
+                </form>
+            </div>
         </section>
     </main>
     <br>

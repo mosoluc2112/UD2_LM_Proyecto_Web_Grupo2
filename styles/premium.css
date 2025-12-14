@@ -60,6 +60,43 @@ header {
     background-color: #d2e7ff;
 }
 
+/* Formulario */
+.seccion-premium {
+    text-align: center;
+}
+.contenedor-form-premium {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-premium {
+    background-color: #e4d9ff;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px #382f50;
+    border-style: dashed;
+    text-align: left;
+}
+
+.formulario-premium legend {
+    text-align: center;
+    color: #382f50;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.formulario-premium:hover {
+    border: solid 2px #8b73c9;
+    border-style: dashed;
+    background-color: white;
+}
+
+.button:hover {
+    background-color: #382f50;
+    color: #a1acff;
+}
+
 /* Pie de página*/
 
 footer {
