@@ -84,19 +84,29 @@ header {
 }
 
 .div-html, .div-css, .div-javascript {
-    padding: 50px;
-
+    padding: 20px;
+    background-color: #a1acff;
+    border-radius: 50px;
+    margin: 10px;
+    border: solid 5px #8b73c9;
+    border-style: outset;
+    color:#382f50;
 }
+
 /* No sé centrar esto xd */
 .div-java-python {
     display: flex;
-    justify-content: space-around;
-    width: 30px;
+    width: 100px;
 }
 
 .div-java, .div-python {
-    padding: 50px;
-    justify-items: center;
+    padding: 20px;
+    background-color: #a1acff;
+    border-radius: 50px;
+    margin: 10px;
+    border: solid 5px #8b73c9;
+    border-style: outset;
+    color:#382f50;
 }
 
 .seccion-cursos iframe {
