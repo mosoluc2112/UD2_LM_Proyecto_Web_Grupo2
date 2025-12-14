@@ -68,11 +68,11 @@ header {
     letter-spacing: 2px;
     color: #737ac9;
     margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .seccion-cursos {
     text-align: justify;
-    border: solid 5px blue;
 }
 
 .seccion-cursos h4 {
@@ -93,10 +93,8 @@ header {
     color:#382f50;
 }
 
-/* No sé centrar esto xd */
 .div-java-python {
     display: flex;
-    width: 100px;
 }
 
 .div-java, .div-python {
@@ -110,8 +108,11 @@ header {
 }
 
 .seccion-cursos iframe {
+    display: block;
+    margin: auto;
     width: 300px;
     height: 169px;
+    border-radius: 20px;
 }
 
 /* Sección Formulario de Cursos */
