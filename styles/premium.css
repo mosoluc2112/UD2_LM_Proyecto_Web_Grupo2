@@ -254,6 +254,10 @@ footer {
     width: 60px;
 }
 
+footer nav a {
+    text-decoration: none;
+}
+
 footer h5 {
     margin-bottom: 2px;
 }
