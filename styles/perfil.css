@@ -69,6 +69,7 @@ header {
     align-items: flex-start;
     margin: auto;
 }
+
 .seccion-perfil {
     display: inline-block;
     background-color: #a1acff;
@@ -78,13 +79,23 @@ header {
     padding: 10px;
     margin: 5px;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 25%;
     height: 550px;
     align-content: center;
 }
 
+form img {
+    position: relative;
+    left: 115px;
+}
+
 .mi-perfil {
     text-align: center;
+}
+
+.mi-perfil p {
+    font-size: 14px;
 }
 
 #perfil {
@@ -126,6 +137,7 @@ header {
     margin-top: 20px;
 }
 
+/* Tablas de Racha acual y Racha más larga */
 .table-1, .table-2 {
     margin: auto; /* Para centrar la tabla */
     border-collapse: collapse;
@@ -167,11 +179,13 @@ header {
     height: 290px;
 }
 
-/* Artículo de progresos */
+/* Artículos de progresos y certificados */
 .prog-cert {
     display: flex;
-    justify-content: center;
+    margin-top: 5px;
+    justify-content: space-between;
 }
+
 .progreso h4 {
     margin-bottom: 20px;
     color: #382f50;
@@ -192,14 +206,16 @@ header {
     border-radius: 20px;
     border-style: outset;
     padding: 10px;
-    width: 40%;
+    width: 45%;
 }
 
-.progreso ul {
+.progreso ul, .certificados ol {
     list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
 }
 
-/* Artículo de certificados */
 .certificados h4 {
     margin-bottom: 20px;
     color: #382f50;
@@ -210,18 +226,13 @@ header {
     padding: 10px;
 }
 
-.certificados ol {
-    list-style-type: none;
-    text-align: left;
-}
-
 /* Aside */
 aside {
     text-align: center;
     background-color: #382f50;
     color:white;
     padding: 2px;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
 }
 
 aside h4 {
