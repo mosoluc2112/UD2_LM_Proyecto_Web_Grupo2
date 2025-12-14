@@ -32,86 +32,85 @@
 
     <div class="principal-index"> 
      <!--Ponemos este contenedor para poder colocar el main y el aside cada uno a un lado de la página y que se vea como corresponde -->
-     <main>
-        <!-- Aquí antes se encontraban los divs de estas dos secciones organizados en una tabla para poder aproximar 
-        el efecto visual que queríamos hacer con CSS a posteriori, pero usando solamente las tablas, ahora que ya podemos utilizarlo
-        hemos hecho el cambio necesario en el HTML para que se vea como realmente queríamos. Posteriormente intentaremos convertir estas secciones
-        en una especie de carrusel usando javascript.  En esta primera queremos enseñar una muestra de los cursos disponibles en la web.
-        Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web de cursos, con el objetivo de que redirija 
-        al usuario allí. -->
-        <div class="caja-grande-index">
-            <h2 id="index">Te recomendamos...</h2>
-            <div class="caja-tarjetas-index">
-                <div class="tarjeta-index">
-                    <a href="cursos.html#html" target="_blank">
-                    <img src="images/html_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de HTML.">
-                    </a>
+        <main>
+            <!-- Aquí antes se encontraban los divs de estas dos secciones organizados en una tabla para poder aproximar 
+            el efecto visual que queríamos hacer con CSS a posteriori, pero usando solamente las tablas, ahora que ya podemos utilizarlo
+            hemos hecho el cambio necesario en el HTML para que se vea como realmente queríamos. Posteriormente intentaremos convertir estas secciones
+            en una especie de carrusel usando javascript.  En esta primera queremos enseñar una muestra de los cursos disponibles en la web.
+            Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web de cursos, con el objetivo de que redirija 
+            al usuario allí. -->
+            <div class="caja-grande-index">
+                <h2 id="index">Te recomendamos...</h2>
+                <div class="caja-tarjetas-index">
+                    <div class="tarjeta-index">
+                        <a href="cursos.html#html" target="_blank">
+                        <img src="images/html_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de HTML.">
+                        </a>
                         <p><b>HTML</b></p>
                         <p>Aprende a montar el esqueleto de tu página web.</p>
-                </div>
-                <div class="tarjeta-index">
-                    <a href="cursos.html#css" target="_blank">
-                    <img src="images/css_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de CSS.">
-                    </a>
+                    </div>
+                    <div class="tarjeta-index">
+                        <a href="cursos.html#css" target="_blank">
+                        <img src="images/css_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de CSS.">
+                        </a>
                         <p><b>CSS</b></p>
                         <p>Dale forma a tu web.</p>
-                </div>
+                    </div>
                     <div class="tarjeta-index">
-                    <a href="cursos.html#java" target="_blank">
-                    <img src="images/java_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de Java.">
-                    </a>
+                        <a href="cursos.html#java" target="_blank">
+                        <img src="images/java_miniatura.jpg" width="160" height="90" alt="Miniatura del curso de Java.">
+                        </a>
                         <p><b>Java</b></p>
                         <p>Crea las aplicaciones que<br> desees.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!--Ponemos ejemplos de profesores y expertos en el tema usando imagenes de stock, debajo de esto nombres inventados para ellos-->
-        <!--Lo organizamos en una tabla con el objetivo de convertirla posteriormente en un carrusel usando javascript,
-        siguiendo las mismas direcciones que especificamos en un comentario anterior.-->
-        <div class="caja-grande-index">
-        <h2>¡Nuestros expertos nos avalan!</h2>
-            <div class="caja-tarjetas-index">
-                <div class="tarjeta-index">
-                    <img src="images/dy.jpg" width="100px" alt="Imagen de Ramón Ayala, profesor colaborador.">
+            <!--Ponemos ejemplos de profesores y expertos en el tema usando imagenes de stock, debajo de esto nombres inventados para ellos-->
+            <!--Lo organizamos en una tabla con el objetivo de convertirla posteriormente en un carrusel usando javascript,
+            siguiendo las mismas direcciones que especificamos en un comentario anterior.-->
+            <div class="caja-grande-index">
+                <h2>¡Nuestros expertos nos avalan!</h2>
+                <div class="caja-tarjetas-index">
+                    <div class="tarjeta-index">
+                        <img src="images/dy.jpg" width="100px" alt="Imagen de Ramón Ayala, profesor colaborador.">
                         <p><b>Ramón Ayala:</b><br> Profesor colaborador con CodiGo</p>
-                </div>
-                <div class="tarjeta-index">
-                    <img src="images/rl.jpg" width="100px" alt="Rosa López, colaboradora en el montaje de la web.">
+                    </div>
+                    <div class="tarjeta-index">
+                        <img src="images/rl.jpg" width="100px" alt="Rosa López, colaboradora en el montaje de la web.">
                         <p><b>Rosa López:</b><br> Colaboradora en el montaje de la página</p>
-                </div>
-                <div class="tarjeta-index">
-                    <img src="images/jb.jpg" width="150px" alt="José Osorio, experto en JavaScript.">
+                    </div>
+                    <div class="tarjeta-index">
+                        <img src="images/jb.jpg" width="150px" alt="José Osorio, experto en JavaScript.">
                         <p><b>José Osorio:</b><br> Experto en JavaScript</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    </main>
-    <aside>
-        <h3>Puedes encontrarnos en...</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1588.8478822815139!2d-3.6114260858338088!3d37.20745502804024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1762694001023!5m2!1ses!2ses"
-                width="300"
-                height="187"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        <!--Movemos de sitio el audio, ya que como ahora sí saldrá en la parte de arriba de la página al estar el aside configurado de esta manera no será necesario que esté suelto encima del main-->
-        <audio controls autoplay loop preload>
-            <source src="media/audio_premium.mp3" type="audio/mpeg">
-        </audio>
-        <div class="opiniones-index">
-            <h2>Opiniones de nuestros alumnos</h2>
-            <!--Enlace a trustpilot para que los usuarios vean o dejen opiniones. Como no es una página real ponemos sólo el enlace a la página principal de Truspilot.-->
-                <nav>
-                    <a href="https://es.trustpilot.com/" target="_blank">
-                        <img src="images/trustpilot.png" width="180px">
-                    </a> <br> <br>  
-                </nav>
-        </div>
-     </aside>
+        </main>
+        <aside>
+            <h3>Puedes encontrarnos en...</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1588.8478822815139!2d-3.6114260858338088!3d37.20745502804024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1762694001023!5m2!1ses!2ses"
+                    width="300"
+                    height="187"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            <!--Movemos de sitio el audio, ya que como ahora sí saldrá en la parte de arriba de la página al estar el aside configurado de esta manera no será necesario que esté suelto encima del main-->
+            <audio controls autoplay loop preload>
+                <source src="media/audio_premium.mp3" type="audio/mpeg">
+            </audio>
+            <div class="opiniones-index">
+                <h2>Opiniones de nuestros alumnos</h2>
+                <!--Enlace a trustpilot para que los usuarios vean o dejen opiniones. Como no es una página real ponemos sólo el enlace a la página principal de Truspilot.-->
+                    <nav>
+                        <a href="https://es.trustpilot.com/" target="_blank">
+                            <img src="images/trustpilot.png" width="180px">
+                        </a> <br> <br>  
+                    </nav>
+            </div>
+        </aside>
     </div>
      <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
         (email & teléfono), y copyright-->
