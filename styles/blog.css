@@ -65,6 +65,95 @@ main{
     padding-left: 2%;
 }
 
+.caja-grande-blog{
+    color: #382f50;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-radius: 20px;
+    border-style: outset;
+    padding: 10px;
+    margin: 20px;
+}
+
+.caja-grande-blog h2 {
+    padding-left: 1%;
+}
+
+.fomulario-blog{
+    color: #2b2639;
+    border: #382f50 solid;
+    background-color: #d2e7ff;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+.cuadrostexto-blog{
+    border-radius: 10px;
+    padding: 0.5%;
+    margin-top: 0.5%;
+    width: 97%;
+}
+
+.titulo-usuario-blog{
+    border-radius: 10px;
+    padding: 0.5%;
+    margin-top: 0.5%;
+}
+
+.discusiones-blog{
+    color: #2b2639;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.discusiones-blog h3{
+    font-size: 20px;
+}
+
+.discusiones-blog table{
+    border-collapse: collapse;
+    background-color: #a1acff;
+    border: solid 5px #8b73c9;
+    border-style: outset;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.discusiones-blog table th, .discusiones-blog table td {
+    border: 3px solid #8b73c9;
+    padding: 10px;
+    text-align: left;
+}
+
+.discusiones-blog table th{
+    padding: 1.5%;
+}
+
+.discusiones-blog button{
+    padding: 8px;
+    font-size: 14px;
+    background-color:#8b73c9;
+}
+
+.discusiones-blog th:nth-child(1) {
+    width: 70%;
+}
+
+.discusiones-blog th:nth-child(2) {
+    width: 15%;
+}
+
+.discusiones-blog th:nth-child(3) {
+    width: 15%;
+    text-align: center;
+}
+
+.texto-dicusion{
+    background-color:#c7ccdc;
+}
 
 /* Pie de página */
 
@@ -79,8 +168,18 @@ footer {
 }
 
 .clic-index {
-    color: #382f50;
-    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #382f50;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.clic-index img {
+    width: 60px;
 }
 
 footer h5 {

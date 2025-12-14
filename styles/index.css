@@ -133,8 +133,18 @@ footer {
 }
 
 .clic-index {
-    color: #382f50;
-    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #382f50;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.clic-index img {
+    width: 60px;
 }
 
 footer h5 {

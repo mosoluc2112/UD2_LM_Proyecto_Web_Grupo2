@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=1, initial-scale=1.0">
    <!--Elegimos el nombre de la página que aparece en la pestaña del navegador en función del contenido que se vaya a mostrar-->
     <title>Inicio</title>
-   <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->    
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-        table {
-            border-collapse: collapse;
-        }
-    </style>
      <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
@@ -39,11 +30,15 @@
         </nav>
     </header>
 
-    <div class="principal-index"> <!--Ponemos este contenedor para poder colocar el main y el aside cada uno a un lado de la página y que se vea como corresponde -->
+    <div class="principal-index"> 
+    <!--Ponemos este contenedor para poder colocar el main y el aside cada uno a un lado de la página y que se vea como corresponde -->
     <main>
-        <!--En la sección de cursos recomendados lo organizamos en una tabla con el objetivo de convertirla posteriormente
-            en un carrusel usando javascript. Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web
-            de cursos, con el objetivo de que redirija al usuario allí. -->
+        <!-- Aquí antes se encontraban los divs de estas dos secciones organizados en una tabla para poder aproximar 
+        el efecto visual que queríamos hacer con CSS a posteriori, pero usando solamente las tablas, ahora que ya podemos utilizarlo
+        hemos hecho el cambio necesario en el HTML para que se vea como realmente queríamos. Posteriormente intentaremos convertir estas secciones
+        en una especie de carrusel usando javascript.  En esta primera queremos enseñar una muestra de los cursos disponibles en la web.
+        Para ello ponemos captura de la miniatura de los vídeos de que ya aparecen en la web de cursos, con el objetivo de que redirija 
+        al usuario allí. -->
         <div class="caja-grande-index">
             <h2 id="index">Te recomendamos...</h2>
             <div class="caja-tarjetas-index">
@@ -71,7 +66,8 @@
             </div>
         </div>
         <!--Ponemos ejemplos de profesores y expertos en el tema usando imagenes de stock, debajo de esto nombres inventados para ellos-->
-        <!--Lo organizamos en una tabla con el objetivo de convertirla posteriormente en un carrusel usando javascript.-->
+        <!--Lo organizamos en una tabla con el objetivo de convertirla posteriormente en un carrusel usando javascript,
+        siguiendo las mismas direcciones que especificamos en un comentario anterior.-->
         <div class="caja-grande-index">
         <h2>¡Nuestros expertos nos avalan!</h2>
             <div class="caja-tarjeta-index">
@@ -119,15 +115,12 @@
      <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
         (email & teléfono), y copyright-->
     <footer>
-
-
-
-
-    <!--MOVER ESTO FUERA DEL FOOTER Y PONERLO COMO UNA FLECHA PARA PODER SUBIR EN TODO MOMENTO. SE HACE CON POSITION:FIXED -->
-        <a href="#index" class="clic-index">Haz clic aquí para volver al principio de la página</a>
-       
-       
-       
+        <!--Botón de "Haz clic aquí para volver al principio de la página"-->
+        <div class="clic-index">
+            <a href="#index">
+                <img src="/images/flecha_arriba.png">
+            </a>
+        </div>
         <br>
         <br>
         <!--Ponemos los enlaces a las redes sociales dentro de <nav> en el footer para poder acceder a ellas.

@@ -4,16 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Elegimos el nombre de la página que aparece en la pestaña del navegador en función del contenido que se vaya a mostrar-->
-    <title>Blog</title>
-    <!--Estilo para ponerle borde a la tabla y quitarle el borde doble que viene por defecto-->    
-    <style>
-        table, th, td {
-            border: 1px solid black;
-        }
-        table {
-            border-collapse: collapse;
-        }
-    </style>
+    <title>Blog</title> 
     <link rel="stylesheet" href="/styles/blog.css">
 </head>
 <body>
@@ -39,21 +30,26 @@
         </nav>
     </header>
     <main>
-        <h2 id="blog">Blog</h2>
-    <!--Para ver opiniones, dudas o experiencias que quieran compartir los usuarios de la página-->
-        <form>
-            <label>Publica tus dudas y experiencias para que otros te respondan:</label><br><br>
-            <label for="titulo">Ponle título a tu publicación:</label>
-                <input type="text" placeholder="Mi duda es..." name="titulo"><br>
-            <label for="usuario">Identifícate con tu usuario:</label>
-                <input type="text" placeholder="@Usuario123"><br><br>
-            <label>Escribe tu publicación</label><br>    
-            <textarea type="text" placeholder="Cuéntanos..." ></textarea><br>
-        </form>
+        <div class="caja-grande-blog">
+            <h2 id="blog">Blog</h2>
+        <!--Para ver opiniones, dudas o experiencias que quieran compartir los usuarios de la página-->
+            <form>
+                <label>Publica tus dudas y experiencias para que otros te respondan:</label><br><br>
+                <div class="fomulario-blog">
+                <label for="titulo">Ponle título a tu publicación:</label>
+                    <input type="text" placeholder="Mi duda es..." name="titulo" class="titulo-usuario-blog"><br>
+                <label for="usuario">Identifícate con tu usuario:</label>
+                    <input type="text" placeholder="@Usuario123" class="titulo-usuario-blog"><br><br>
+                <label>Escribe tu publicación</label><br>    
+                <textarea type="text" placeholder="Cuéntanos..." class="cuadrostexto-blog" class=""></textarea><br>
+            </form>
+                </div>
+        </div>
     <!--Ejemplos de discusiones que se podrían ver en esta página. Así podemos mostrar el formato en el que se presentarían visualmente 
         y las diferentes opciones de personalización del texto. Utilizamos en ellas las etiquetas <br>, <b> e <i>, a parte de <em> y <strong>,
         que aunque visualmente sean similares para el usuario, los navegadores los interpretan semánticamente y si, por ejemplo, utilizamos
         un lector de pantalla, al leerlo le dará el énfasis necesario para que quien lo escuche pueda saberlo.-->
+        <div class="discusiones-blog">
         <h3>Discusiones</h3>
             <table>
                 <thead>
@@ -66,28 +62,29 @@
                         </th>
                 </thead>
                 <tr>
-                    <td colspan="3">
+                    <td colspan="3" class="texto-dicusion">
                         Hola a todos, estoy empezando a aprender Python y me encontré con algo que no entiendo muy bien.<br> 
-                        Estoy intentando recorrer una lista con un bucle <i>for</i> para imprimir todos sus elementos,<br> 
+                        Estoy intentando recorrer una lista con un bucle <i>for</i> para imprimir todos sus elementos, 
                         pero por alguna razón, el último elemento nunca se muestra en pantalla. <br> <br>
                         Mi código en Python es este:<br><br>
                         <em>numeros = [1, 2, 3, 4, 5]<br>
                         for i in range(len(numeros) - 1):<br>
                         print(numeros[i])<br><br></em>
                         Como resultado solo imprime del 1 al 4, pero yo esperaba que también saliera el 5.<br>
-                        Entiendo que <i>range()</i> genera una secuencia de números, pero no tengo claro por qué tengo que restarle <br>
+                        Entiendo que <i>range()</i> genera una secuencia de números, pero no tengo claro por qué tengo que restarle 
                         uno a <i>len(numeros)</i>. Si no lo hago, me da un error de índice fuera de rango.<br>
-                        ¿Alguien podría explicarme qué está pasando exactamente y cuál sería la forma correcta de hacer que se <br>
+                        ¿Alguien podría explicarme qué está pasando exactamente y cuál sería la forma correcta de hacer que se 
                         impriman todos los elementos de la lista?<br><br>
                         ¡Gracias de antemano!
                     </td>
                 </tr>
-            </table><br><br>
+            </table>
+            <br><br>
             <!--En esta publicación queremos mostrar una especie de hilo en el que se responde a la publicación principal que lo comienza. En ella
                 también añadimos la etiqueta <abbr> para poder abreviar lenght.-->
             <table>
                 <thead>
-                        <th><strong>Respuesta:</strong><em>¿Por qué mi bucle for no imprime todos los elementos de la lista?</em></th>
+                        <th><strong>Respuesta: </strong><em>¿Por qué mi bucle for no imprime todos los elementos de la lista?</em></th>
                         <th>@DevJoseProf</th>
                         <th>
                             <form>
@@ -96,7 +93,7 @@
                         </th>
                 </thead>
                 <tr>
-                    <td colspan="3">
+                    <td colspan="3" class="texto-dicusion">
                         ¡Hola @CodeNovato92! 👋<br> <br>
                         Buena pregunta, esto es un error muy común cuando uno empieza con Python.<br>
                         Vamos a desglosarlo paso a paso: <br><br>
@@ -105,28 +102,35 @@
                         lo que estás diciendo es que el bucle recorra los valores desde 0 hasta <i><abbr title="length">len</abbr>(numeros) - 2</i>.<br>
                         Por ejemplo, si tu lista tiene 5 elementos, <i><abbr title="length">len</abbr>(numeros)</i> es 5, y <i>range(5 - 1</i>) genera: <br><br>
                         <em>[0, 1, 2, 3]</em><br><br>
-                        Por eso el último índice (4, que corresponde al número 5) nunca se usa, y no se imprime<br> 
+                        Por eso el último índice (4, que corresponde al número 5) nunca se usa, y no se imprime 
                         el último elemento. Si escribieras: <br><br>
                         <em>for i in range(<abbr title="length">len</abbr>(numeros)):<br>
                         print(numeros[i])</em><br><br>
-                        Entonces <i>range(5</i>) generaría [0, 1, 2, 3, 4], e imprimiría todos los elementos correctamente.<br>
+                        Entonces <i>range(5</i>) generaría [0, 1, 2, 3, 4], e imprimiría todos los elementos correctamente.
                         Pero hay una forma de estilo <em>más Python</em> de hacerlo:<br><br>
                         No necesitas usar índices ni <i>range()</i> para recorrer una lista. Puedes hacerlo así:<br><br>
                         <i>for numero in numeros:<br>
                         print(numero)</i><br><br>
-                        Python recorrerá automáticamente cada elemento de la lista, sin preocuparte por los índices ni<br> los límites.
-                        En resumen: El error ocurre porque restas 1 al <i><abbr title="length">len()</abbr></i>, haciendo que el bucle se quede corto. <br>Usa 
-                        <i>range(<abbr title="length">len(lista)</abbr>)</i> si realmente necesitas los índices. O mejor aún, recorre directamente los elementos <br>de la lista.
+                        Python recorrerá automáticamente cada elemento de la lista, sin preocuparte por los índices ni los límites.
+                        En resumen: El error ocurre porque restas 1 al <i><abbr title="length">len()</abbr></i>, haciendo que el bucle se quede corto. Usa 
+                        <i>range(<abbr title="length">len(lista)</abbr>)</i> si realmente necesitas los índices. O mejor aún, recorre directamente los elementos de la lista.
                         <br><br>
                         <strong>¡Sigue practicando! </strong>💪
                     </td>
                 </tr>
-            </table><br>
+            </table>
+            <br>
+        </div>    
     </main>
     <!--Pie de página con enlaces a 3 redes sociales, apartado de datos de contacto
         (email & teléfono), y copyright-->
     <footer>
-        <a href="#blog" class="clic-index">Haz clic aquí para volver al principio de la página</a>
+        <!--Botón de "Haz clic aquí para volver al principio de la página"-->
+        <div class="clic-index">
+            <a href="#blog">
+                <img src="/images/flecha_arriba.png">
+            </a>
+        </div>
         <br>
         <br>
         <!--Ponemos los enlaces a las redes sociales dentro de <nav> en el footer para poder acceder a ellas.
